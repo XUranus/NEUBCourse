@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>MyCloud - 注册新账号</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <div class="text-center">
+    <br><br>
+      <img src="img/logo.png" style="width:150px">
+      <h1>MyCloud</h1>
+  </div>
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">注册MyCloud账号</div>
+      <div class="card-body">
+        <form method="post" action="completeRegister.jsp" onsubmit="return check()" id="registerForm">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="mail">邮箱</label>
+                <input class="form-control" name="mail" id="mail" type="text" aria-describedby="nameHelp" placeholder="输入你的邮箱...">
+              </div>
+              <div class="col-md-6">
+                <label for="nickname">昵称</label>
+                <input class="form-control" name="nickname" id="nickname" type="text" aria-describedby="nameHelp" placeholder="昵称最多20个字">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="password1">密码</label>
+                <input class="form-control" name="password" id="password1" type="password" placeholder="输入密码">
+              </div>
+              <div class="col-md-6">
+                <label for="password2">确认密码</label>
+                <input class="form-control" id="password2" type="password" placeholder="再输入一次密码">
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">注册</button>
+          <span id="errMsgPanel" style="color:red"></span>
+        </form>
+
+        <div class="text-center">
+          <a class="d-block small mt-3" href="login.html">已有账号?&nbsp;登陆</a>
+          <a class="d-block small" href="forgot-password.html">忘记密码?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/registerPage.js"></script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+</html>

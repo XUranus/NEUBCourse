@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>MyCloud - 登陆</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+
+  <div class="text-center">
+    <br><br>
+      <img src="img/logo.png" style="width:150px">
+      <h1>MyCloud</h1>
+  </div>
+  <div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header">登陆</div>
+      <div class="card-body">
+        <form method="post" action="login.jsp" onsubmit="return loginToNode()">
+          <div class="form-group">
+            <label for="mail1">Email</label>
+            <input class="form-control" id="mail" name="mail" type="email" aria-describedby="emailHelp" placeholder="邮箱">
+          </div>
+          <div class="form-group">
+            <label for="password1">密码</label>
+            <input class="form-control" id="password" name="password" type="password" placeholder="请输入密码">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">自动登陆</label>
+            </div>
+          </div>
+          <span style="color:red" id="errMsgPanel"></span>
+          <button class="btn btn-primary btn-block" id="login_btn" type="submit">登陆</button>
+        </form>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="register.html">没有账号？注册</a>
+          <a class="d-block small" href="forgot-password.html">忘记密码?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/loginPage.js"></script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MyCloud</title>
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <script>
+        FontAwesomeConfig = {searchPseudoElements: true};
+    </script>
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+
+  <a href="selfInfoManage.jsp" class="navbar-brand">
+    <img id="avatar" src="${sessionScope.user_now.avatar_path }" style="border-radius:200px;width:30px" >
+    <span>&nbsp;</span>
+    <span style="color:white;padding-bottom:0px;">${sessionScope.user_now.nickname }</span>
+  </a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <a class="nav-link" href="disk.jsp">
+          <i class="fa fa-fw fa-cloud"></i>
+          <span class="nav-link-text">我的网盘</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+        <a class="nav-link" href="dustbin.jsp">
+          <i class="fa fa-fw fa-recycle"></i>
+          <span class="nav-link-text">回收站</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+          <i class="fa fa-fw fa-wrench"></i>
+          <span class="nav-link-text">文件分类</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="collapseComponents">
+          <li>
+            <a href="catagory-video.jsp">视频</a>
+          </li>
+          <li>
+            <a href="catagory-image.jsp">图片</a>
+          </li>
+          <li>
+            <a href="catagory-music.jsp">音乐</a>
+          </li>
+          <li>
+            <a href="catagory-document.jsp">文档</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <a class="nav-link" href="posts.jsp">
+          <i class="fa fa-fw fa-cubes"></i>
+          <span class="nav-link-text">资源广场</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <a class="nav-link" href="friends.jsp">
+          <i class="fa fa-fw fa-users"></i>
+          <span class="nav-link-text">我的好友</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <a class="nav-link" href="shareList.jsp">
+          <i class="fa fa-fw fa-share"></i>
+          <span class="nav-link-text">我的分享</span>
+        </a>
+      </li>
+      <!---status-->
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <a class="nav-link"  href="selfInfoManage.jsp">
+          <i class="fas fa-tachometer-alt"></i>
+          <span class="nav-link-text" id="usageProgress">
+            载入中
+            <div class="progress"><br>
+              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0</div>
+            </div>
+          </span>
+        </a>
+      </li>
+      <!--/-status-->
+    </ul>
+
+
+
+    <ul class="navbar-nav sidenav-toggler">
+      <li class="nav-item">
+        <a class="nav-link text-center" id="sidenavToggler">
+          <i class="fa fa-fw fa-angle-left"></i>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-fw fa-envelope"></i>
+          <span class="d-lg-none">消息
+            <span class="badge badge-pill badge-primary" id="messageNum">消息拉取中</span>
+          </span>
+          <span class="indicator text-primary d-none d-lg-block">
+            <i class="fa fa-fw fa-circle"></i>
+          </span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="messagesDropdown" id="messageList">消息加载中</div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-fw fa-bell"></i>
+          <span class="d-lg-none">通知
+            <span class="badge badge-pill badge-warning" id="notificationNum">通知拉取中...</span>
+          </span>
+          <span class="indicator text-warning d-none d-lg-block">
+            <i class="fa fa-fw fa-circle"></i>
+          </span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="alertsDropdown" id="notificationList">通知加载中...</div>
+      </li>
+
+      <li class="nav-item">
+        <form class="form-inline my-2 my-lg-0 mr-lg-2">
+          <div class="input-group">
+            <input class="form-control" type="text" placeholder="搜索我的网盘...">
+            <span class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#exitModal">
+          <i class="fas fa-sign-out-alt"></i>退出</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="content-wrapper" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div><!--样式待考虑-->
+            <div class="col-lg-10">
+                <div class="card pl-4 pr-4" style="background-color: buttonface;">
+                    <span class="mt-2">
+                        <button type="button" id="clickOnEmoji" class="btn btn-secondary-outline btn-sm" onclick="showEmoji()">
+                            <i class="far fa-lg fa-smile"></i>
+                        </button>
+                            <div id="showEmoji" style="display: none;z-index: 13;position: absolute;">
+                                <table class="table table-bordered" style="height:448.8px;width: 404px;background: #f1f1f1;">
+                                    <tbody>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/1.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/2.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/3.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/4.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/5.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/6.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/7.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/8.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/9.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/10.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/11.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/12.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/13.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/14.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/15.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/16.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/17.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/18.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/19.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/20.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/21.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/22.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/23.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/24.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/25.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/26.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/27.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/28.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/29.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/30.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/31.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/32.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/33.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/34.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/35.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/36.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/37.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/38.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/39.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/40.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/41.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/42.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/43.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/44.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/45.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/46.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/47.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/48.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/49.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/50.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/51.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/52.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/53.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/54.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/55.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/56.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/57.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/58.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/59.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/60.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/61.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/62.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/63.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/64.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/65.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/66.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/67.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/68.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/69.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/70.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/71.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/72.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/73.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/74.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/75.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/76.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/77.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/78.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/79.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/80.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    <tr style="width: 280px;height: 28px">
+                                        <td><img src="emoji/81.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/82.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/83.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                        <td><img src="emoji/84.png" width="28" height="28" onclick="sendEmoji(src);"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        <button type="button" class="btn btn-secondary-outline btn-sm">
+                            <i class="far fa-lg fa-image"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary-outline btn-sm" data-toggle="modal" data-target="#linkModal">
+                            <i class="fa fa-lg fa-link"></i>
+                        </button>
+                    </span>
+                    <textarea id="textarea_post" class="form-control col-lg-12 mt-1 mb-1" type="text"></textarea>
+                    <span class="mb-2" style="text-align:right">
+                        <button type="button" class="btn btn-secondary-outline btn-sm" onclick="submit_post()">
+                            <i class="far fa-lg fa-paper-plane"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary-outline btn-sm" onclick="submit_cancel()">
+                            <i class="fa fa-lg fa-ban"></i>
+                        </button>
+                    </span>
+                </div>
+                <div class="modal fade" id="linkModal" tabindex="-1" aria-labelledby="linkModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="linkModalLabel">分享我的链接</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group ml-2 mt-2 mb-4 col-lg-11">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-fw fa-tag"></i></span>
+                                    </div>
+                                    <input id="linkModalLinkTag" type="text" class="form-control" placeholder="输入链接的标签" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group ml-2 mt-2 mb-2 col-lg-11">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fa fa-fw fa-link"></i></i></span>
+                                    </div>
+                                    <input id="linkModalLink" type="text" class="form-control" value="https://" aria-label="Username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="link_cancel()">取消</button>
+                                <button type="button" class="btn btn-primary" onclick="$('#linkModal').modal('toggle');">完成</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Columns Example Social Feed-->
+                <div class="mb-0 mt-2">
+                    <i class="far fa-newspaper "></i> News Feed
+                </div>
+                <hr class="mt-2"><!--分割线-->
+                <div class="card-columns">
+
+                </div>
+                <!-- /Card Columns-->
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2018</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+<script src="js/fontawesome-all.js"></script>
+<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin.min.js"></script>
+<script src="wow.js"></script>
+</body>
+</html>
