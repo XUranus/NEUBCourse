@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="user-layout">
+    <div th:fragment="content">
+
+
+
+        <h3>我的账户</h3><br>
+
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" >
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                      <a href="">
+                        <img class="img" src="../assets/img/faces/marc.jpg">
+                      </a>
+                    </div>
+
+                    <div class="card-body table-responsive">
+                      <table class="table table-hover">
+                        <thead class="text-warning">
+                          <tr><th></th>
+                          <th></th>
+                        </tr></thead>
+                        <tbody>
+                          <tr>
+                            <td>用户名：</td>
+                            <td th:text="${user.username}"></td>
+                          </tr>
+                          <tr>
+                            <td>注册日期：</td>
+                            <td th:text="${user.register_date}"></td>
+                          </tr>
+                          <tr>
+                            <td>电话号码：</td>
+                            <td th:text="${user.telephone}"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-warning card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">attach_money</i>
+                  </div>
+                  <p class="card-category">账户余额</p>
+                  <h3 class="card-title" th:text="${user.balance}"></h3>
+                </div>
+                <br><br>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                  <div class="card-header card-header-primary card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">credit_card</i>
+                    </div>
+                    <h3 class="card-title" >绑定的银行卡</h3>
+                </div>
+
+                  <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                      <thead class="text-warning">
+                        <tr><th>#</th>
+                        <th>银行卡号</th>
+                      </tr></thead>
+                      <tbody id="bankcardList">
+                        <tr th:each="bankcard:${bankcards}">
+                          <td th:text="${bankcard.bank_id}"></td>
+                          <td th:text="${bankcard.bankcard_number}"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <h3>我的设备</h3>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" th:each="device:${my_devices}">
+                <div class="card card-stats">
+                  <div th:class="${device.arrears>0}?'card-header card-header-danger card-header-icon':'card-header card-header-success card-header-icon'">
+                    <div class="card-icon">
+                      <i class="material-icons" th:if="${device.device_type==1}">person</i>
+                      <i class="material-icons" th:if="${device.device_type==2}">business</i>
+                    </div>
+                    <p class="card-category" th:if="${device.device_type==1}">居民用电设备</p>
+                    <p class="card-category" th:if="${device.device_type==2}">商业用电设备</p>
+                    <h3 class="card-title" style="color:red" th:text="'-$'+${device.arrears}"></h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="material-icons">location_on</i>
+                      <span th:text="${device.address}"></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>
+        window.onload = ()=>{
+            $("#sidenav").find('li:eq(1)').attr("class","nav-item active");
+
+            $("#bankcardList").find("tr").each(function(){
+                var tdArr = $(this).children();
+                var bankType = tdArr.eq(0);
+                if(bankType.text()==1000) {//农业
+                    bankType.html(`<img  style="width:40px"  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535348323194&di=b7a35215c4dda44ee431ce302a88c6d4&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fdesign%2F00%2F07%2F85%2F23%2F59316ca9789ee.png"></img>`);
+                }
+                else if(bankType.text()==2000){//工商
+                    bankType.html(`<img  style="width:40px"  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535348005223&di=e3c00bd92369bcab595b00072d0de65e&imgtype=0&src=http%3A%2F%2Fpic2.16pic.com%2F00%2F24%2F26%2F16pic_2426848_b.jpg"></img>`);
+                }
+                else if(bankType.text()==3000) {//建设
+                    bankType.html(`<img style="width:40px" src="http://pic.downyi.com/upload/2017-7/20177271536343680.png"></img>`);
+                };
+            });
+        }
+        </script>
+
+
+
+
+    </html>
+</html>

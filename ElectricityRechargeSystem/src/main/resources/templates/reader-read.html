@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="reader-layout">
+    <div th:fragment="content">
+
+
+
+        <div class="container-fluid">
+
+            <div class="card">
+              <div class="card-header card-header-primary">
+                <h4 class="card-title">抄表</h4>
+                <p class="card-category">录入新的记录</p>
+              </div>
+
+              <div class="card-body" id="input-card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group bmd-form-group">
+                        <label class="bmd-label-floating">设备号</label>
+                        <input id="input-device-id" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group bmd-form-group">
+                        <label class="bmd-label-floating">当前度数</label>
+                        <input id="input-reading" type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <button onclick="nextStep()" class="btn btn-primary pull-right">下一步</button>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+
+            <div class="card" id="confirm-card" style="display:none">
+                <div class="card-body">
+                  <form id="confirmForm">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group bmd-form-group is-filled">
+                          <label class="bmd-label-floating">设备号</label>
+                          <input name="device-id" id="device_id" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group bmd-form-group is-filled">
+                          <label class="bmd-label-floating">当前读数</label>
+                          <input name="current-reading" id="current-reading" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group bmd-form-group is-filled">
+                          <label class="bmd-label-floating">设备地址</label>
+                          <input id="address" name="address" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group bmd-form-group is-filled">
+                          <label class="bmd-label-floating">抄表人</label>
+                          <input id="reader" name="reader" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group bmd-form-group is-filled">
+                          <label class="bmd-label-floating">抄表日期</label>
+                          <input id="date" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <a onclick="reinput()" href="javascript:;" class="btn btn-warning pull-right">重新输入</a>
+                    <a onclick="confirm()" href="javascript:;" class="btn btn-success pull-right">完成</a>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+
+
+            </div>
+
+
+
+            <script>
+            window.onload = ()=>{
+                $("#sidenav").find('li:eq(0)').attr("class","nav-item active");
+            }
+
+            function nextStep() {
+                //ajax
+                $.ajax({
+                url: "/reader/api/confirm-record",
+                type:'post',　
+                data:{
+                    device_id:document.getElementById("input-device-id").value,
+                    reading:document.getElementById("input-reading").value
+                },
+                dataType:'json',
+                success:function(data) {
+                  if(data.success) {
+                      console.log(data);
+                      $("#device_id").val(data.device_id);
+                      $("#current-reading").val(data.current_reading);
+                      $("#address").val(data.address);
+                      $("#reader").val(data.reader_name);
+                      $("#date").val((new Date()+'').substring(0,10));
+                      $("#input-card").hide();
+                      $("#confirm-card").fadeIn("slow");
+
+                      $("#device_id").focus();
+                  }
+                  else alert(data.msg);
+                },
+                error:function(err) {
+                  console.log(err);
+                }
+              });
+
+            }
+
+            function reinput() {
+                $("#confirm-card").hide();
+                $("#input-card").fadeIn("slow");
+            }
+
+            function confirm() {
+                $.ajax({
+                url: "/reader/api/save-record",
+                type:'post',　
+                data:$('#confirmForm').serialize(),
+                dataType:'json',
+                success:function(data) {
+                  if(data.success) {
+                    alert("提交成功");
+                  }
+                  else alert(data.msg);
+                  location.reload();
+                },
+                error:function(err) {
+                  console.log(err);
+                }
+              });
+
+            }
+
+            </script>
+
+
+        </div>
+
+
+    </html>
+</html>

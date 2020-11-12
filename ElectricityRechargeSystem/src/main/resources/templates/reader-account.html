@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="reader-layout">
+    <div th:fragment="content">
+
+        <h1>抄表员信息界面</h1>
+
+        <div class="card">
+            <div class="card-body">
+                ID:<p th:text="${account_data.meter_reader_id}"></p>
+                姓名：<p th:text="${account_data.meter_reader_name}"></p>
+                用户名：<p th:text="${account_data.username}"></p>
+                联系电话：<p th:text="${account_data.telephone}"></p>
+            </div>
+        </div>
+
+        <script>
+        window.onload = ()=>{
+            $("#sidenav").find('li:eq(2)').attr("class","nav-item active");
+        }
+        </script>
+
+
+    </html>
+</html>

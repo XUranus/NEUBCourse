@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="reader-layout">
+    <div th:fragment="content">
+
+
+        <h1>抄表员查询历史抄表记录</h1>
+
+        <div class="card" th:each="record:${records}">
+            抄表记录单号：<p th:text="${record.read_record_id}"></p>
+            设备号：<p th:text="${record.device_id}"></p>
+            抄表员ID：<p th:text="${record.meter_reader_id}"></p>
+            抄表员姓名：<p th:text="${record.meter_reader_name}"></p>
+            抄表日期：<p th:text="${record.record_date}"></p>
+            抄表读数：<p th:text="${record.reading}"></p>  
+        </div>
+
+        <script>
+        window.onload = ()=>{
+            $("#sidenav").find('li:eq(1)').attr("class","nav-item active");
+        }
+        </script>
+
+
+
+    </html>
+</html>

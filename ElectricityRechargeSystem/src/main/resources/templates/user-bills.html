@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="user-layout">
+    <div th:fragment="content">
+
+
+
+        <h3>已经逾期的欠款</h3>
+
+
+        <div th:if="${bills.isEmpty()}">
+            <p>暂时没有欠款记录</p>
+        </div>
+
+        <div class="card" th:each="bill:${bills}">
+            <div class="card-header card-header-danger">
+              <h4 class="card-title" th:text="'欠款单号： '+${bill.bill_id}"></h4>
+              <p class="card-category" th:text="'欠款生成日期： '+${bill.bill_generate_date}"></p>
+            </div>
+            <div class="card-body">
+                欠款单号：<span th:text="${bill.bill_id}"></span><br>
+                欠款状态：<span th:text="${bill.bill_status}?'已付清':'没有付清'"></span><br>
+                欠款生成日期：<span th:text="${bill.bill_generate_date}"></span><br>
+                滞纳金起始计算时间：<span th:text="${bill.bill_start_date}"></span><br>
+                欠款注销时间：<span th:text="${bill.bill_payed_date}"></span><br>
+                欠款本金：<span th:text="${bill.principle}"></span><br>
+                滞纳金总额：<span th:text="${bill.total_cost}"></span>
+            </div>
+        </div>
+
+
+        <script>
+        window.onload = ()=>{
+            $("#sidenav").find('li:eq(3)').attr("class","nav-item active");
+        }
+        </script>
+
+
+
+    </html>
+</html>

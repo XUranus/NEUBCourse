@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="user-layout">
+    <div th:fragment="content">
+
+
+        <h3>给该账户缴费</h3>
+
+
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title">在线缴费</h4>
+            <p class="card-category">目前欠费：</p>
+          </div>
+
+          <div class="card-body" id="input-card">
+              <div class="row">
+                  <div class="input-group col-md-4">
+                    <select class="custom-select" id="deviceSelection">
+                      <option th:each="device:${my_devices}" th:value="${device.device_id}" th:text="${device.address}"></option>
+                    </select>
+                  </div>
+
+                  <div class="input-group col-md-4">
+                    <select class="custom-select" id="bankcardSelection">
+                      <option th:each="card:${my_cards}" th:value="${card.bank_id}" th:text="${card.bankcard_number}"></option>
+                    </select>
+                  </div>
+
+                <div class="col-md-4">
+                  <div class="form-group bmd-form-group">
+                    <label class="bmd-label-floating">缴费数额</label>
+                    <input id="cost" type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <button onclick="pay()" class="btn btn-primary pull-right">完成</button>
+              <div class="clearfix"></div>
+          </div>
+        </div>
+
+
+        <script>
+        window.onload = ()=>{
+            $("#sidenav").find('li:eq(5)').attr("class","nav-item active");
+        }
+
+        function pay() {
+            var data = {
+                cost:$("#cost").val(),
+                bank_id:$('#bankcardSelection option:selected').val(),
+                bankcard_number:$('#bankcardSelection option:selected').text(),
+                device_id:$('#deviceSelection option:selected').val()
+            };
+            console.log(data);
+            $.ajax({
+            url: "/user/api/handleRechargeRequest",
+            type:'post',　
+            data:data,
+            dataType:'json',
+            success:function(data) {
+              if(data.success) {
+                 if(data.success) alert("成功");
+                 else alert("失败");
+                 location.reload();
+              }
+            },
+            error:function(err) {
+              console.log(err);
+            }
+          });
+        }
+        </script>
+
+
+
+
+
+    </html>
+</html>
