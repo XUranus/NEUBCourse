@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Wayou">
+        <meta name="description" content="hichat | a simple chat application built with node.js and websocket">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ChatRoom</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="styles/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="styles/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/component.css" rel="stylesheet">
+ 
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+        <link rel="stylesheet" href="styles/style2.css">
+    </head>
+    <body style="background-color:#efefef;">
+        <br>
+        <div class="container">
+          <div class="card">
+            
+            <header style="background-color:#99FFFF">
+              <div style="margin:10px 10px 10px 10px">
+              <div style="float:right">
+              <span>接受信息：&nbsp;<span id="talkTo">全部</span></span>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">选择对象</button>
+                    <div class="dropdown-menu" id="menu">
+                        <a class="dropdown-item" href="#">全部</a>
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+
+                <h1>&nbsp;ChatRoom</h1>
+                &nbsp;&nbsp;&nbsp;<span id="status"></span><br>
+          
+                
+               </div>
+            </header>
+            
+            <div class="container"><br>
+             
+              <div id="historyMsg"></div><!--聊天窗口-->
+              <hr>
+              <div style="height:60px;"><!--工具栏-->
+                <i class="fa fa-font" aria-hidden="true"></i>                                        
+                <input id="colorStyle" type="color" placeHolder='#000' title="font color" />&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-meh-o" aria-hidden="true" id="emoji"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-picture-o" aria-hidden="true" onclick="document.getElementById('sendImage').click()"></i>&nbsp;&nbsp;&nbsp;
+                <input id="sendImage" type="file" value="image"/>
+                <i class="fa fa-credit-card-alt" aria-hidden="true" id="showBarrage"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-mars" aria-hidden="true" id="showBilly"></i>&nbsp;&nbsp;&nbsp;
+                <hr>
+              </div><br>
+              
+              <div class="container" id="inputPanel"><!--输入模块-->
+                  <div class="md-form">
+                    <i class="fa fa-pencil prefix"></i>
+                    <textarea type="text" id="messageInput" class="md-textarea"></textarea>
+                    <label for="messageInput">输入内容</label>
+                    <button id="sendBtn" type="button" class="btn btn-primary my-2">发送</button>
+                    <button id="clearBtn" class="btn btn-default my-2">清屏</button>
+                    <div id="emojiWrapper"></div>
+                  </div>
+              </div>
+           
+         
+            </div>
+          </div>
+        </div>
+        
+        <div class="container"><br>
+          <footer style="float:right">
+            <a href="https://github.com/XUranus/websocket_chatroom">My GitHub</a>&nbsp;<br><br>
+          </footer>
+        </div>
+        
+        <div id="loginWrapper">
+          <p id="info">喵喵喵...</p>
+          <div id="nickWrapper">
+            <div class="container">
+            <input class="form-control" type="text" placeHolder="昵称" id="nicknameInput" />
+            <input type="button" value="确认" id="loginBtn" class="btn btn-light-blue"/>
+             </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <!--弹幕模式-->
+        <div class="barrage">
+        
+          <div class="screen">
+            <a href="#" class="s_close">X</a>
+            <div class="mask"><!--内容在这里显示--></div>
+          </div>
+        
+          <!--Send Begin-->
+          <div class="send">
+            <input type="text" class="s_text">
+            <input type="button" class="s_btn" value="发送" type="submit" id="danmu_submit">
+          </div>
+          <!--Send End-->
+        
+          <span class="s_close">X</span>
+        </div>
+        <!--/弹幕模式-->
+        
+        
+        
+        
+        
+        
+        
+        
+       <section class="avenue-messenger" id="cusService" style="display:none">
+         <div class="menu">
+          <div class="button" id="closePanel">...</div>
+        </div>
+        
+        <div class="agent-face">
+            <div class="half">
+                <img class="agent circle" src="bili.jpg" alt="Jesse Tino">
+            </div>
+        </div>
+        
+        <div class="chat">
+        
+          <div class="chat-title">
+            <h1>比利·海灵顿</h1>
+            <h2>神之♂救济</h2>
+          </div>
+          
+          <div class="messages">
+            <div class="messages-content"></div>
+          </div>
+          
+          <div class="message-box">
+            <textarea type="text" class="message-input" placeholder="输入信息..."></textarea>
+            <button type="submit" class="message-submit" id="message-submit">发送</button>
+          </div>
+     
+        </div>
+       </section>
+        
+        
+  
+        
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="scripts/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/danmu.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="scripts/mdb.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="scripts/webchat.js"></script>
+        
+
+        
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+        <script  src="scripts/AI.js"></script>
+        
+    </body>
+</html>
