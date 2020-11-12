@@ -15,11 +15,11 @@
 - [jasper](jasper) JSP到Servlet的编译器 （NEU SE 2017 JSP课设）　
 - [ServletContainer](ServletContainer) Servlet容器，一个简化的Tomcat（NEU SE 2017 JSP课设）　
 - [MyCloud](MyCloud) 网盘（NEU SE 2017 JSP课设）　
-- [HttpServer](http-server) Java多线程静态Web服务器 （NEU SE 2017　计算机网络课设） 
+- [HttpServer](http-server) Java多线程静态Web服务器 （NEU SE 2017 计算机网络课设） 
 - [SimpleFTP](simple-ftp) Java FTP协议（NEU SE 2017 计算机网络课设）  
 - [websocket-chatroom](websocket-chatroom) 基于WebSocket的网页聊天室 （NEU SE 2017 计算机网络课设） 
 - [terminal-chatroom](terminal-chatroom) 基于TCP协议的终端聊天室（NEU SE 2017 计算机网络课设） 
-- [ElectricityRechargeSystem](ElectricityRechargeSystem) 电表收费系统（NEU SE 2018　数据库课设）  
+- [ElectricityRechargeSystem](ElectricityRechargeSystem) 电表收费系统（NEU SE 2018 数据库课设）  
 - [graphics-algorithms](graphics-algorithm) 计算机图形学算法（NEU CS 2019 计算机图形学蹭课）　
 - [MathWork](MathWork) 高斯消去法（NEU SE 2018 数值分析课设）
 - [OS-lab](os-lab) 操作系统实验课课设（NEU SE 2018 操作系统课设）
@@ -28,6 +28,7 @@
 - [linux-core-utils](linux-core-utils) 实现基本的Linux命令（NEU SE 2019 Linux课设）　
 - [linux-webserver](linux-webserver) C语言实现Linux下的多线程PHP Web服务器 （NEU SE 2019 Linux课设）　
 - [weather-widget](weather-widget) Web天气控件（NEU SE 2019 Web分布式课设）　
+- [his](his) 东软云医院（NEU SE 2019 睿道实训）
 
 ## NEU BigData
 大数据实验班相关课程设计，详见：[neu-big-data](https://github.com/XUranus/neu-big-data)
