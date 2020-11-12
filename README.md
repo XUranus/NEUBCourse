@@ -20,6 +20,8 @@
 - [websocket-chatroom](websocket-chatroom) 基于WebSocket的网页聊天室 （NEU SE 2017 计算机网络课设） 
 - [terminal-chatroom](terminal-chatroom) 基于TCP协议的终端聊天室（NEU SE 2017 计算机网络课设） 
 - [ElectricityRechargeSystem](ElectricityRechargeSystem) 电表收费系统（NEU SE 2018 数据库课设）  
+- [dashboard](dashboard) Windows桌面个人日记系统（NEU SE 2018 VB.NET课设）  
+- [shop-charge-system](shop-charge-system)（NEU SE 2018 VB.NET课设）  
 - [graphics-algorithms](graphics-algorithm) 计算机图形学算法（NEU CS 2019 计算机图形学蹭课）　
 - [MathWork](MathWork) 高斯消去法（NEU SE 2018 数值分析课设）
 - [OS-lab](os-lab) 操作系统实验课课设（NEU SE 2018 操作系统课设）
