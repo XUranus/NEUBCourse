@@ -1,0 +1,108 @@
+<% extend('layout') %>
+
+<h3>停车区：</h3>
+<table class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th scope="col">车位</th>
+      <th scope="col">车牌</th>
+      <th scope="col">到达时间</th>
+      <th scope="col">进入时间</th>
+      <th scope="col"><i class="fa fa-car fa-fw"></i></th>
+    </tr>
+  </thead>
+  <tbody id="parkingStatusTable"></tbody>
+</table>
+
+<h3>等待区：</h3>
+<table class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th scope="col">车位</th>
+      <th scope="col">车牌</th>
+      <th scope="col">到达时间</th>
+    </tr>
+  </thead>
+  <tbody id="waitingStatusTable"></tbody>
+</table>
+
+<h3>新停车：</h3>
+<div class="form-inline">
+<input class="form-control form-control-lg" type="text" placeholder="在此输入车牌号..." id="plateNumberInput">
+<button onclick="parkCar()" class="btn btn-success">停放</button>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+var parking = [];
+var waiting = [];
+
+function parkCar() {
+  $.ajax({
+    url: "/park/parkCar",
+    type:'post',　
+    data:{plate_number:$('#plateNumberInput').val()},
+    dataType:'json',
+    success:function(data) {
+      if(data.msg=='OK') location.reload();
+      else alert('park car err!');
+    },
+    error:function(err) {
+      console.log("park car err!: ",err);
+    }
+  });
+}
+
+function leftCar(plate_number) {
+  $.ajax({
+    url: "/park/leftCar",
+    type:'post',　
+    data:{plate_number:plate_number},
+    dataType:'json',
+    success:function(data) {
+      if(data.res) {
+        //display cost
+        alert('收费：'+data.cost/1000);
+        location.reload();
+      }
+      else alert('data.msg');
+    },
+    error:function(err) {
+      console.log("left car err!: ",err);
+    }
+  });
+}
+
+$.ajax({
+  url: "/park/loadStatus",
+  data: {},
+  success:function(status) {
+    //console.log(status);
+    parking = status.parking;
+    waiting = status.waiting;
+    for(var i=0;i<parking.length;i++) {
+      $('#parkingStatusTable').append(
+        `<tr>
+          <th scope="row">${i+1}</th>
+          <td>${parking[i].plate_number}</td>
+          <td>${(new Date(parking[i].arrive_time)+'').split("GMT")[0]}</td>
+          <td>${(new Date(parking[i].enter_time)+'').split("GMT")[0]}</td>
+          <td><button class="btn btn-danger" onclick=leftCar("${parking[i].plate_number}")>离开</button></td>
+        </tr>`);
+    }
+
+    for(var i=0;i<waiting.length;i++) {
+      $('#waitingStatusTable').append(
+        `<tr>
+          <th scope="row">${i+1}</th>
+          <td>${waiting[i].plate_number}</td>
+          <td>${(new Date(waiting[i].arrive_time)+'').split("GMT")[0]}</td>
+        </tr>`);
+    }
+  },
+  error:function(err) {
+    console.log("load park status err: ",err);
+  }
+});
+
+</script>

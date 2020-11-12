@@ -1,0 +1,37 @@
+<% extend('layout') %>
+<h2>景区地图一览</h2>
+<div id="mynetwork"></div>
+
+<style type="text/css">
+  #mynetwork {
+    width: 900px;
+    height: 700px;
+    border: 1px solid lightgray;
+  }
+</style>
+
+
+<script type="text/javascript">
+$.ajax({
+  url: "/graph/loadGraph",
+  data: {},
+  success: function(data) {
+    console.log(data);
+    var nodes = new vis.DataSet(data.nodes);
+    var edges = new vis.DataSet(data.edges);
+    var container = document.getElementById('mynetwork');
+    var data = {
+      nodes: nodes,
+      edges: edges
+    };
+    var options = {
+      interaction:{hover:true},
+    };
+    var network = new vis.Network(container, data, options);
+    network.setOptions({nodes:{shadow:true},edges:{shadow:true}});
+  },
+  error:function (data) {
+    alert("error");
+  }
+});
+</script>

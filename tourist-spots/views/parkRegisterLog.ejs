@@ -1,0 +1,42 @@
+<% extend('layout') %>
+
+<h3>停车场日志：</h3>
+<table class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th scope="col">车牌</th>
+      <th scope="col">到达时间</th>
+      <th scope="col">进入时间</th>
+      <th scope="col">离开时间</th>
+      <th scope="col">花费</th>
+    </tr>
+  </thead>
+  <tbody id="parkingHistoryTable"></tbody>
+</table>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+window.onload = function() {
+  $.ajax({
+    url: "/park/loadLog",
+    type:'post',　
+    dataType:'json',
+    success:function(data) {
+      for(var i=0;i<data.length;i++) {
+        $('#parkingHistoryTable').append(
+          `<tr>
+            <td>${data[i].plate_number}</td>
+            <td>${(new Date(data[i].arrive_time)+'').split("GMT")[0]}</td>
+            <td>${(new Date(data[i].enter_time)+'').split("GMT")[0]}</td>
+            <td>${(new Date(data[i].leave_time)+'').split("GMT")[0]}</td>
+            <td>${data[i].cost/1000}</td>
+          </tr>`);
+      }
+    },
+    error:function(err) {
+      console.log("load park log err!: ",err);
+    }
+  });
+}
+</script>

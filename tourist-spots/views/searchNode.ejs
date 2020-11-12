@@ -1,0 +1,73 @@
+<% extend('layout') %>
+
+<h2>搜索和查看景点</h2>
+<div class="form-inline">
+  <input type="text" id="nodeNameInput" class="form-control" placeholder="输入要查找的景点名称">
+  <button onclick="searchNode()" class="btn btn-success">查找</button>
+  <button onclick="sortByPopularity()" class="btn btn-primary">根据热度排序</button>
+  <label id="searchMsgLabel" style="color:red"></label>
+</div><br>
+<div id="nodesPanelList"></div>
+
+<script>
+var data = [];//globe
+
+window.onload = function() {
+  $.ajax({
+    url: "/graph/getAllNodes",
+    type:'post',　
+    dataType:'json',
+    success:function(res) {
+      console.log('data',res);
+      data = res;
+      renderNodes();
+    },
+    error:function(err) {
+      console.log("get all nodes err!: ",err);
+    }
+  });
+}
+
+function renderNodes() {
+  $('#nodesPanelList').html('');
+  for(var i=0;i<data.length;i++) {
+    $('#nodesPanelList').append(
+      `<div class="panel panel-default" id="node${i}">
+        <div class="panel-heading">
+          <h3 class="panel-title">${data[i].name}</h3>
+        </div>
+        <div class="panel-body">
+          ${data[i].intro}
+          <div style="float:right">`+
+            (data[i].has_rest_area?'<i class="fa fa-blind fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp':'')+
+            (data[i].has_toilet?'<i class="fa fa-male fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp':'')+
+            `<i class="fa fa-thumbs-up fa-fw">${data[i].popularity}</i>&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>`
+    )
+  }
+}
+
+function sortByPopularity() {
+  function cmp1(a,b) {
+    return (b.popularity-a.popularity);
+  }
+  data.sort(cmp1);
+  renderNodes();
+}
+
+function searchNode() {
+  $('#searchMsgLabel').html('');
+  var name = $('#nodeNameInput').val();
+  var found = false;
+  for(var i=0;i<data.length;i++) {
+    if(data[i].name==name) {
+      window.location.href = '/user/searchNode#node'+i;
+      found = true;
+      break;
+    }
+  }
+  if(!found) $('#searchMsgLabel').html('没有找到该景点！');
+}
+</script>

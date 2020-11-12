@@ -1,0 +1,117 @@
+<% extend('layout') %>
+
+<h3>求最短两点路径：</h3>
+<div class="form-inline">
+  <select id="name1Select" class="form-control"></select>
+  <select id="name2Select" class="form-control"></select>
+  <button onclick="calcuShortestPath()" class="btn btn-success">计算</button>
+</div>
+
+
+<br>
+<h4 id="minLength"></h4>
+<ol class="breadcrumb" id="pathBreadcrumb" style="display:none"></ol>
+
+<div id="network" style="height:600px"></div>
+
+
+<script>
+var nodesArray,edgesArray,nodes,edges,container,options,network;
+
+window.onload = function() {
+  $.ajax({
+    url: "/graph/getAllNodes",
+    type:'post',　
+    data:{},
+    dataType:'json',
+    success:function(data) {
+      console.log('data',data);
+      for(var i=0;i<data.length;i++) {
+        $('#name1Select').append(`<option>${data[i].name}</option>`);
+        $('#name2Select').append(`<option>${data[i].name}</option>`);
+      }
+    },
+    error:function(err) {
+      console.log("get all nodes err!: ",err);
+    }
+  });
+
+  $.ajax({
+    url: "/graph/loadGraph",
+    data: {},
+    success: function(data) {
+      console.log("graph init data:",data);
+      nodesArray = data.nodes;
+      edgesArray = data.edges;
+      //
+      nodes = new vis.DataSet(nodesArray);
+      edges = new vis.DataSet(edgesArray);
+      container = document.getElementById('network');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      options = {};
+      network = new vis.Network(container, data, options);
+      network.setOptions({nodes:{shadow:true},edges:{shadow:true}});
+    },
+    error:function (data) {
+      alert("error");
+    }
+  });
+}
+
+function calcuShortestPath() {
+  $.ajax({
+    url: "/graph/shortestPath",
+    type:'post',　
+    data:{
+      name1:$('#name1Select option:selected').text(),
+      name2:$('#name2Select option:selected').text()
+    },
+    dataType:'json',
+    success:function(data) {
+      console.log("calcu shortest result",data);
+      $('#pathBreadcrumb').attr('style','display:true');
+      $('#pathBreadcrumb').html('');
+      for(var i=0;i<data.path.length;i++) {
+        $('#pathBreadcrumb').append(`<li class="breadcrumb-item active">${data.path[i]}</li>`);
+      }
+      $('#minLength').html('最短路径长：'+data.length);
+      //update graph appearance
+      resetGraph();
+      var pathNodeIds = [];
+      for(var i=0;i<data.path.length;i++) {
+        for(var j=0;j<nodesArray.length;j++){
+          if(nodesArray[j].label==data.path[i]) {
+            nodes.update([{id:nodesArray[j].id, color:{background:'red'}}]);
+            pathNodeIds.push(nodesArray[j].id);
+            break;
+          }
+        }
+      }
+      for(var i=0;i<pathNodeIds.length-1;i++) {
+        for(var x of edgesArray){
+          if(
+            (x.from==pathNodeIds[i] && x.to==pathNodeIds[i+1])||
+            (x.to==pathNodeIds[i] && x.from==pathNodeIds[i+1])
+          ) {
+            edges.update([{id:x.id,color:{color:'red'},value:3}]);
+            break;
+          }
+        }
+      }
+      //end update graph
+    },
+    error:function(err) {
+      console.log("get shortest path err!: ",err);
+    }
+  });
+}
+
+function resetGraph() {
+  nodes = new vis.DataSet(nodesArray);
+  edges = new vis.DataSet(edgesArray);
+  network.setData({nodes:nodes, edges:edges})
+}
+</script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="XUranus" content="">
+
+    <title>景点管理系统 <%=(userType==1?"管理员":"游客")%></title>
+    <link rel="shortcut icon" href="../dist/favicon/favicon.ico" />
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/vis-network.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/vis.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">Hello&nbsp;<%=username%></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.通知 -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> 一条推送
+                                    <span class="pull-right text-muted small">4 分钟前</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                    <!-- /.通知 -->
+                </li>
+                <!-- /用户nav下拉框 -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i><%=username%></a> </li>
+                        <li class="divider"></li>
+                        <li><a href="/login"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                        </li>
+                    </ul>
+                    <!-- /用户nav下拉框  -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+
+                      <%if(userType==1) {%>
+                        <li>
+                            <a href="createGraph"><i class="fa fa-plus fa-fw"></i>创建景区景点分布图</a>
+                        </li>
+                      <%}%>
+
+                        <li>
+                            <a href="showGraph"><i class="fa fa-tree fa-fw"></i>显示景区景点分布图</a>
+                        </li>
+                        <li>
+                            <a href="searchNode"><i class="fa fa-university fa-fw"></i>搜索和查看景点</a>
+                        </li>
+                        <li>
+                            <a href="guidePath"><i class="fa fa-circle-o-notch fa-fw"></i>输出导游路线图中的回路</a>
+                        </li>
+                        <li>
+                            <a href="shortestPath"><i class="fa fa-dashboard fa-fw"></i>求景点间的最短距离和路径</a>
+                        </li>
+
+                      <%if(userType==1) {%>
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>停车记录系统<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="parkRegister">停车出入登记</a>
+                                </li>
+                                <li>
+                                    <a href="parkRegisterLog">停车场日志</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                      <%}%>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+
+        <div id="notificationPanel"></div>
+
+            <%- content %>
+        </div>
+        <!--／Page Content -->
+
+
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="../vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../dist/js/socket.io.js"></script>
+    <script>
+      var socket = io.connect('http://localhost:8082');
+      socket.on('notification', function (data) {
+        console.log(data.msg);
+        $('#notificationPanel').html(`<br>
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <strong>通知：</strong>${data.msg}
+          </div>`);
+      });
+    </script>
+
+</body>
+
+</html>

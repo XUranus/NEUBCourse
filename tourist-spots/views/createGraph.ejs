@@ -1,0 +1,76 @@
+<% extend('layout') %>
+
+<h2>创建景区地图</h2>
+<div id="mynetwork"></div>
+
+<style type="text/css">
+  #mynetwork {
+    width: 900px;
+    height: 700px;
+    border: 1px solid lightgray;
+  }
+</style>
+
+
+<script type="text/javascript">
+var nodes,edges,container,data,network;
+var options = {
+  interaction:{hover:true},
+  manipulation: {
+    enabled: true,
+    addEdge: function (data, callback) {
+      console.log(data);
+      var label = window.prompt("长度是：","");
+      data.label = label+'';
+      callback(data);
+      GraphAddEdge({
+        from:data.from,
+        to:data.to,
+        dis:parseInt(label)
+      });
+    },
+    deleteEdge:function(data, callback) {
+      console.log('delete edge:',data);
+      callback(data);
+    }
+  }
+};
+
+
+window.onload = function(){//init graph
+  $.ajax({
+    url: "/graph/loadGraph",
+    success: function(res) {
+      console.log(res);
+      nodes = new vis.DataSet(res.nodes);
+      edges = new vis.DataSet(res.edges);
+      container = document.getElementById('mynetwork');
+      data = {
+        nodes: nodes,
+        edges: edges
+      };
+      network = new vis.Network(container, data, options);
+      network.setOptions({nodes:{shadow:true},edges:{shadow:true}});
+    },
+    error:function (data) {
+      alert("load graph error");
+    }
+  });
+}
+
+function GraphAddEdge(data) {//向后台发送增加边的信息
+  $.ajax({
+    url: "/graph/addEdge",
+    type:'post',　
+    data:data,
+    dataType:'json',
+    success:function(res) {
+      if(res.msg) console.log('success to add edge');
+      else console.log('fail to add edge');
+    },
+    error:function(err) {
+      console.log("add edge err!: ",err);
+    }
+  });
+}
+</script>

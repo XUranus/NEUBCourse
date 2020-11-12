@@ -1,0 +1,96 @@
+<% extend('layout') %>
+
+<h3>导游路线图</h3>
+<p>（导游路线是一条哈密尔顿回路）</p>
+<div class="form-inline">
+  <select id="pathSelect" class="form-control"></select>
+  <button onclick="switchPath()" class="btn btn-success">显示路径</button>
+  <h4 id="minLength"></h4>
+</div>
+
+
+<br>
+<ol class="breadcrumb" id="pathBreadcrumb" style="display:none"></ol>
+<div id="network" style="height:600px"></div>
+
+
+<script>
+var nodesArray,edgesArray,nodes,edges,container,options,network;
+var TSPdata;
+
+window.onload = function() {
+  $.ajax({
+    url: "/graph/getTSPPath",
+    type:'post',　
+    data:{},
+    dataType:'json',
+    success:function(data) {
+      TSPdata = data;
+      console.log('TSP data',data);
+      for(var i=0;i<TSPdata.length;i++)
+        $('#pathSelect').append(`<option>路线${i+1}</option>`);
+      for(var i=0;i<TSPdata.length;i++) {
+        var len = TSPdata[i].path.length;
+        TSPdata[i].path.push(TSPdata[i].path[0]);
+      }
+    },
+    error:function(err) {
+      console.log("get all TSP path err!: ",err);
+    }
+  });
+
+  $.ajax({
+    url: "/graph/loadGraph",
+    data: {},
+    success: function(data) {
+      console.log("graph init data:",data);
+      nodesArray = data.nodes;
+      edgesArray = data.edges;
+      //
+      nodes = new vis.DataSet(nodesArray);
+      edges = new vis.DataSet(edgesArray);
+      container = document.getElementById('network');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      options = {};
+      network = new vis.Network(container, data, options);
+      network.setOptions({nodes:{shadow:true},edges:{shadow:true}});
+    },
+    error:function (data) {
+      alert("error");
+    }
+  });
+}
+
+function switchPath() {
+  var index = $('#pathSelect option:selected').index();
+  $('#minLength').html('回路长度：'+TSPdata[index].len);
+  resetGraph();
+
+  var pathNodeIds = TSPdata[index].path;
+  for(var i=0;i<nodesArray.length;i++) {
+    nodes.update([{id:nodesArray[i].id, color:{background:'red'}}]);
+  }
+
+  for(var i=0;i<pathNodeIds.length-1;i++) {
+    for(var x of edgesArray){
+      if(
+        (x.from==pathNodeIds[i] && x.to==pathNodeIds[i+1])||
+        (x.to==pathNodeIds[i] && x.from==pathNodeIds[i+1])
+      ) {
+        edges.update([{id:x.id,color:{color:'red'},value:3}]);
+        break;
+      }
+    }
+  }
+}
+
+
+function resetGraph() {
+  nodes = new vis.DataSet(nodesArray);
+  edges = new vis.DataSet(edgesArray);
+  network.setData({nodes:nodes, edges:edges})
+}
+</script>

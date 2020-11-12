@@ -1,0 +1,15 @@
+<% extend('layout') %>
+
+<div>
+  <br>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>景点管理系统</h1>
+        <%if(userType==1) {%>
+        <h2>你的角色：管理员</p>
+        <%} else {%>
+        <p>你的角色：游客</p>
+        <%}%>
+      </div>
+    </div>
+<div>

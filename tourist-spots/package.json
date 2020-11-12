@@ -1,0 +1,31 @@
+{
+  "name": "tour.node_version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "XUranus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-ejs-extend": "0.0.1",
+    "fs": "0.0.1-security",
+    "get-permutations": "^1.0.0",
+    "jquery": "^3.3.1",
+    "js-priority-queue": "^0.1.5",
+    "jsQueue": "^1.0.2",
+    "mysql": "^2.15.0",
+    "popper.js": "^1.14.3",
+    "priority-queues": "^1.0.0",
+    "querystring": "^0.2.0",
+    "stackjs": "^0.1.0"
+  }
+}

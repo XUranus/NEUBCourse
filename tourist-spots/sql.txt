@@ -1,0 +1,79 @@
+create database Tour;
+use Tour;
+
+
+create table User (
+	id INT not null AUTO_INCREMENT,
+	nickname varchar(50) not null,
+	mail varchar(50) not null,
+	password varchar(50) not null,
+	user_group INT not null,
+	PRIMARY KEY(id),
+	UNIQUE(mail)
+);
+
+create table nodes (
+	id INT not null AUTO_INCREMENT,
+	name varchar(50) not null,
+	intro varchar(100) not null,
+	popularity INT default 0,
+	has_rest_area BOOL default false,
+	has_toilet BOOL default false,
+	PRIMARY KEY(id),
+	UNIQUE(name)
+);
+
+create table edges (
+	id INT not null AUTO_INCREMENT,
+	name1 varchar(50) not null,
+	name2 varchar(50) not null,
+	dis DOUBLE not null,
+	PRIMARY KEY(id)
+);
+
+create table parkLog (
+	id INT not null AUTO_INCREMENT,
+	plate_number varchar(10) not null,
+	arrive_time BIGINT(15) not null,
+	enter_time BIGINT(15) default null,
+	leave_time BIGINT(15) default null,
+	cost BIGINT(15) default 0,
+	PRIMARY KEY(id)
+);
+
+alter table User convert to character set utf8;
+alter table nodes convert to character set utf8;
+alter table edges convert to character set utf8;
+alter table parkLog convert to character set utf8;
+
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("北门","这是有关北门的介绍",50,true,true);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("狮子山","这是有关狮子山的介绍",66,false,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("仙云石","这是有关仙云石的介绍",89,true,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("飞流瀑","这是有关飞流瀑的介绍",77,false,true);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("仙武湖","这是有关仙武湖的介绍",45,true,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("九曲桥","这是有关九曲桥的介绍",37,false,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("花卉园","这是有关花卉园的介绍",50,true,true);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("红叶亭","这是有关红叶亭的介绍",24,false,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("碧水亭","这是有关碧水亭的介绍",29,true,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("一线天","这是有关一线天的介绍",23,true,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("观云台","这是有关观云台的介绍",45,true,false);
+insert into nodes(name,intro,popularity,has_rest_area,has_toilet) values ("朝日峰","这是有关朝日峰的介绍",20,true,false);
+
+
+insert into edges (name1,name2,dis) values ("北门","狮子山",9);
+insert into edges (name1,name2,dis) values ("北门","仙云石",8);
+insert into edges (name1,name2,dis) values ("狮子山","一线天",7);
+insert into edges (name1,name2,dis) values ("狮子山","飞流瀑",6);
+insert into edges (name1,name2,dis) values ("仙云石","仙武湖",4);
+insert into edges (name1,name2,dis) values ("仙云石","九曲桥",5);
+insert into edges (name1,name2,dis) values ("仙武湖","九曲桥",7);
+insert into edges (name1,name2,dis) values ("一线天","观云台",11);
+insert into edges (name1,name2,dis) values ("飞流瀑","观云台",3);
+insert into edges (name1,name2,dis) values ("一线天","花卉园",10);
+insert into edges (name1,name2,dis) values ("观云台","红叶亭",15);
+insert into edges (name1,name2,dis) values ("花卉园","红叶亭",9);
+insert into edges (name1,name2,dis) values ("观云台","碧水亭",16);
+insert into edges (name1,name2,dis) values ("仙武湖","碧水亭",20);
+insert into edges (name1,name2,dis) values ("朝日峰","碧水亭",17);
+insert into edges (name1,name2,dis) values ("朝日峰","红叶亭",10);
+insert into edges (name1,name2,dis) values ("九曲桥","朝日峰",20);
