@@ -1,0 +1,20 @@
+FIFO Simulation 
+
+      Arriving: 2 pages from platypus at 2 seconds
+      Servicing: 2 pages from platypus at 2 seconds
+      Arriving: 6 pages from herring at 3 seconds
+      Arriving: 1 page from falcon at 4 seconds
+      Arriving: 1 page from giraffe at 5 seconds
+      Arriving: 10 pages from aardvark at 5 seconds
+      Arriving: 7 pages from dolphin at 5 seconds
+      Servicing: 6 pages from herring at 6 seconds
+      Arriving: 2 pages from eagle at 11 seconds
+      Servicing: 1 page from falcon at 18 seconds
+      Servicing: 1 page from giraffe at 20 seconds
+      Servicing: 10 pages from aardvark at 22 seconds
+      Servicing: 7 pages from dolphin at 42 seconds
+      Servicing: 2 pages from eagle at 56 seconds
+
+      Total jobs: 7
+      Aggregate latency: 131 seconds 
+      Mean latency: 18.7143 seconds 
