@@ -1,0 +1,249 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300";
+@import "https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css";
+html, body, .background {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  background: #fff;
+}
+
+body {
+  background: #eee;
+  background: linear-gradient(0deg, rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0));
+}
+
+.background {
+  background: #eee;
+  background: linear-gradient(120deg, rgba(50, 150, 100, 0.2), rgba(0, 0, 100, 0));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  background: #eee;
+  background: linear-gradient(240deg, rgba(150, 50, 50, 0.3), rgba(0, 0, 200, 0));
+}
+
+nav ul {
+  margin: 20px 20px 0 20px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav li a {
+  display: block;
+  width: 50px;
+  text-align: center;
+  color: #aaa;
+  cursor: pointer;
+}
+nav li a:hover {
+  color: #444;
+}
+nav li a.active {
+  color: #4444ff;
+}
+
+#card {
+  box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  width: 700px;
+  padding: 0;
+  height: 300px;
+  min-height: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+#card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: color 2s ease;
+}
+.thunder #card .details {
+  color: #ddd;
+}
+#card .details .right {
+  text-align: right;
+}
+#card .details #date {
+  margin: 4px 0;
+}
+#card .details #summary {
+  font-weight: 600;
+  font-size: 22px;
+}
+#card .details .temp {
+  font-size: 60px;
+  line-height: 60px;
+}
+#card .details .temp span {
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+.weather {
+  background-color: #DAE3FD;
+  transition: background-color 2s ease;
+}
+.thunder .weather {
+  background-color: #9FA4AD;
+}
+.rain .weather {
+  background-color: #D8D8D8;
+}
+.sun .weather {
+  background-color: #ccccff;
+}
+.weather #inner {
+  background-color: white;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.weather .cloud {
+  transition: fill 2s ease;
+}
+.weather #cloud1 {
+  fill: #efefef;
+}
+.thunder .weather #cloud1 {
+  fill: #9FA4AD;
+}
+.weather #cloud2 {
+  fill: #E6E6E6;
+}
+.thunder .weather #cloud2 {
+  fill: #8B8E98;
+}
+.weather #cloud3 {
+  fill: #D5D5D5;
+}
+.thunder .weather #cloud3 {
+  fill: #7B7988;
+}
+
+#outer, #back {
+  position: fixed;
+  pointer-events: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+select {
+  padding: 5px 10px;
+  width: 150px;
+  height: 25px;
+  font-size: 13px;
+  color: #555;
+  border: 1px solid #ccc;
+}
+
+#weather {
+  margin: auto;
+  max-width: 932px;
+}
+
+#setting {
+  margin: 20px 0;
+}
+
+#display {
+  padding: 20px 16px 24px 16px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+#top {
+  margin-bottom: 20px;
+}
+
+#top .location {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+#top .time {
+  font-size: 16px;
+  line-height: 2;
+}
+
+#top .status {
+  font-size: 13px;
+  line-height: 1.4
+}
+
+#left-information {
+  color: #212121;
+}
+
+#left-information .thumbnail {
+  float: left;
+  height: 64px;
+  width: 64px;
+}
+
+#left-information .temperature {
+  float: left;
+  margin-top: -3px;
+  padding-left: 10px;
+  font-size: 64px;
+}
+
+#left-information .unit {
+  float: left;
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+#right-information {
+  float: right;
+  padding-left: 5px;
+  line-height: 22px;
+  padding-top: 2px;
+  min-width: 43%;
+  font-weight: lighter;
+}
+
+#forecast {
+  padding-top: 10px;
+  clear: both;
+}
+
+#forecast ul {
+  padding: 0;
+  margin: 15px 0 5px 0;
+}
+
+#forecast ul li {
+  display: inline-block;
+  height: 90px;
+  width: 73px;
+  text-align: center;
+  line-height: 1;
+}
