@@ -1,0 +1,69 @@
+﻿<Window x:Class="DiaryWindow"
+
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:personal_dashboard_vb"
+        mc:Ignorable="d"
+        Title="Diary" Height="700" Width="1200" Loaded="Window_Loaded"
+        
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="15"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <materialDesign:Card Grid.Row="0" Background="Indigo" Height="50">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"  Name="TitleTextBlock">Diary</TextBlock>
+        </materialDesign:Card>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MaxWidth='300' />
+                <ColumnDefinition MinWidth='900'/>
+            </Grid.ColumnDefinitions>
+            <materialDesign:Card Margin="5" Grid.Column="0">
+                <WrapPanel>
+                    <Grid MinWidth="250" Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Name="NewDiaryTitleBox" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center">标题</TextBox>
+                        <RadioButton Name="NewDiaryFormatRadio" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" GroupName="Group1">Markdown</RadioButton>
+                        <RadioButton Name="NewDiaryFormatRadio1" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" GroupName="Group1">CommonText</RadioButton>
+                        <Button HorizontalAlignment="Right" Grid.Row="2" Click="Button_Click" Grid.Column="1" Margin="0,10.2,34,7.4">新建</Button>
+                    </Grid>
+                    <ListView MinWidth="300" Name="DiariesListView" SelectionChanged="DiariesListView_SelectionChanged" MinHeight="440"></ListView>
+                </WrapPanel>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="5" Grid.Column="1">
+                <StackPanel>
+                    <DockPanel Margin="5" Tag="-1" Name="SelectedDetailDock">
+                        <Label Name="TitleLabel" Width="200">标题</Label>
+                        <Label Name="FormatLabel" Width="200">格式</Label>
+                        <Label Name="TimeLabel" Width="200">时间</Label>
+                        <Button Width="100" Click="Button_Click_2">编辑</Button>
+                        <Button Width="100" Click="Button_Click_1">删除</Button>
+                    </DockPanel>
+                    <WebBrowser Name="PreViewContent" Margin="3" MinHeight="540"></WebBrowser>
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</Window>

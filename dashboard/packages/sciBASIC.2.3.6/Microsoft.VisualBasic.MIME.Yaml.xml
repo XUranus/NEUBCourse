@@ -1,0 +1,96 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.MIME.Yaml
+</name>
+</assembly>
+<members>
+<member name="T:Microsoft.VisualBasic.MIME.Yaml.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.MIME.Yaml.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.MIME.Yaml.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Microsoft.VisualBasic.MIME.Yaml.Grammar.ChompingMethod">
+ <summary>
+ How line breaks after last non empty line in block scalar are handled.
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.MIME.Yaml.Grammar.ChompingMethod.Clip">
+ <summary>
+ Keep one
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.MIME.Yaml.Grammar.ChompingMethod.Strip">
+ <summary>
+ Keep none
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.MIME.Yaml.Grammar.ChompingMethod.Keep">
+ <summary>
+ Keep all
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.MIME.Yaml.Grammar.YamlParser">
+ <summary>
+ Liu Junfeng. An almost feature complete YAML parser.
+ (http://www.codeproject.com/Articles/28720/YAML-Parser-in-C?msg=4534624#xx4534624xx)
+ 
+ YAML is a human-friendly, cross language, Unicode based data serialization language 
+ designed around the common native data types of agile programming languages. 
+ It is broadly useful for programming needs ranging from configuration files to 
+ Internet messaging to object persistence to data auditing.
+ </summary>
+ <![CDATA[
+ Dim input As New TextInput(richTextBoxSource.Text)
+
+ Dim success As Boolean
+ Dim parser As New YamlParser()
+ Dim yamlStream As YamlStream = parser.ParseYamlStream(input, success)
+ 
+ If success Then
+     treeViewData.Nodes.Clear()
+     For Each doc As YamlDocument In yamlStream.Documents
+         treeViewData.Nodes.Add(YamlEmittor.CreateNode(doc.Root))
+     Next
+     treeViewData.ExpandAll()
+     tabControl1.SelectedTab = tabPageDataTree
+ Else
+     MessageBox.Show(parser.GetEorrorMessages())
+ End If
+ ]]>
+</member>
+<member name="M:Microsoft.VisualBasic.MIME.Yaml.Grammar.YamlParser.IncreaseIndentIfZero">
+ <summary>
+ Mandatory Indentation for "non-indented" Scalar
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.MIME.Yaml.Grammar.YamlParser.IncreaseIndent">
+ <summary>
+ Increase Indent for Nested Block Collection
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.MIME.Yaml.Grammar.YamlParser.DecreaseIndent">
+ <summary>
+ Decrease Indent for Nested Block Collection
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.MIME.Yaml.Grammar.YamlParser.GetEorrorMessages">
+ <summary>
+ 获取得到解析的过程之中的错误消息
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

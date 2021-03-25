@@ -1,0 +1,1597 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.DataMining.Framework
+</name>
+</assembly>
+<members>
+<member name="T:Microsoft.VisualBasic.DataMining.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.BinaryEncodingServices.EncodingTransaction(System.String[])">
+ <summary>
+ ±àÂëÒ»¸öÊÂÎñ
+ </summary>
+ <param name="transaction"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.BinaryEncodingServices.DecodesTransaction(System.String)">
+ <summary>
+ ½âÂëÒ»¸öÊÂÎñ
+ </summary>
+ <param name="Transaction"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices">
+ <summary>
+ ½«ÊÂ¼þ½øÐÐ±àÂëÎªµ¥¸ö×Ö·û
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices.#ctor(System.String[],System.Int32[])">
+ <summary>
+ ±àÂëÔ­Àí£¬Õâ¸öº¯ÊýÊÇÎª¶àÖµ½øÐÐ±àÂëµÄ£¬¼´<paramref name="items"></paramref>Ö®ÖÐµÄÃ¿Ò»¸öÔªËØÎªÈÎÒâÊµÊý½øÐÐÕ¹¿ª£¬È»ºó¶ÔÕ¹¿ªµÄÊý¾Ý½øÐÐ±àÂë´¦Àí
+ </summary>
+ <param name="Items">Value²¿·ÖÎªËùÓÐ¿ÉÄÜµÄÈ¡Öµ£¬Çë×¢Òâ£¬ValueÖ®ÖÐ²»ÄÜ¹»ÓÐÖØ¸´Öµ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices.MapRecovered(System.String)">
+ <summary>
+ ÔÚ½øÐÐ¹ØÁª·ÖÎöÍê±ÏÖ®ºó£¬ÔÙÓ³Éä»ØÈ¥
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices.TransactionEncoding(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.AprioriAlgorithm.Transaction})">
+ <summary>
+ 
+ </summary>
+ <param name="data">Õâ¸öµÄË³ÐòÓëÊýÄ¿±ØÐëÒªÓë<see cref="F:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices._CodeMappings"></see>»òÕß<see cref="F:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices._originals"></see>ÏàÒ»ÖÂ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.Transaction.Values">
+ <summary>
+ Õâ¸öµÄË³ÐòÓëÊýÄ¿±ØÐëÒªÓë<see cref="P:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices.CodeMappings"></see>»òÕß<see cref="F:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.EncodingServices._originals"></see>ÏàÒ»ÖÂ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.Entities.Rule">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.Entities.Rule.Confidence">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.Apriori">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.AprioriAlgorithm.Apriori.SorterSortTokens(System.String)">
+ <summary>
+ ���ַ���֮�е��ַ������������
+ </summary>
+ <param name="token"></param>
+ <returns></returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.ComponentModel.ColorClass">
+ <summary>
+ Object entity classification class
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.ComponentModel.ColorClass.Color">
+ <summary>
+ Using for the data visualization.(RGB表达式, html颜色值或者名称)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.ComponentModel.ColorClass.int">
+ <summary>
+ <see cref="T:System.Int32"/> encoding for this class.(即枚举类型)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.ComponentModel.ColorClass.Name">
+ <summary>
+ Class Name
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.ComponentModel.ColorClass.FromEnums``1(System.String[])">
+ <summary>
+ 
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="colors$">Using the user custom colors</param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.ComponentModel.EntityBase`1">
+ <summary>
+
+ </summary>
+ <typeparam name="T">只允许数值类型</typeparam>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.ComponentModel.Entity">
+ <summary>
+ {Properties} -> Class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.ComponentModel.Entity.CastTo(Microsoft.VisualBasic.Data.csv.IO.RowObject)">
+ <summary>
+
+ </summary>
+ <param name="row">第一个元素为分类，其余元素为属性</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.ComponentModel.Vector">
+ <summary>
+ 用于表示一个对象实体的属性值的一个向量
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.ComponentModel.Vector.Randomize(System.UInt32,System.Double,System.Double)">
+ <summary>
+ 生成一个指定长度的随机数序列
+ </summary>
+ <param name="Length"></param>
+ <param name="Upper"></param>
+ <param name="Lower"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FuzzyCMeans.AlgorithmsUtils.DifferenceMatrix(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Language.List{System.Double}},Microsoft.VisualBasic.Language.List{Microsoft.VisualBasic.Language.List{System.Double}})">
+ <summary>
+ �������
+ </summary>
+ <param name="matrix1"></param>
+ <param name="matrix2"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.FuzzyCMeans.FuzzyCMeansAlgorithm">
+ <summary>
+ **Fuzzy clustering** (also referred to as **soft clustering**) is a form of clustering in which 
+ each data point can belong to more than one cluster.
+
+ Clustering Or cluster analysis involves assigning data points to clusters (also called buckets, 
+ bins, Or classes), Or homogeneous classes, such that items in the same class Or cluster are as 
+ similar as possible, while items belonging to different classes are as dissimilar as possible. 
+ Clusters are identified via similarity measures. These similarity measures include distance, 
+ connectivity, And intensity. Different similarity measures may be chosen based on the data Or 
+ the application.
+ 
+ > https://en.wikipedia.org/wiki/Fuzzy_clustering
+ </summary>
+ <remarks>
+ Clustering problems have applications in **biology**, medicine, psychology, economics, and many other disciplines.
+
+ ##### Bioinformatics
+ 
+ In the field of bioinformatics, clustering Is used for a number of applications. One use Is as 
+ a pattern recognition technique to analyze gene expression data from microarrays Or other 
+ technology. In this case, genes with similar expression patterns are grouped into the same cluster, 
+ And different clusters display distinct, well-separated patterns of expression. Use of clustering 
+ can provide insight into gene function And regulation. Because fuzzy clustering allows genes 
+ to belong to more than one cluster, it allows for the identification of genes that are conditionally 
+ co-regulated Or co-expressed. For example, one gene may be acted on by more than one Transcription 
+ factor, And one gene may encode a protein that has more than one function. Thus, fuzzy clustering 
+ Is more appropriate than hard clustering.
+ </remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FuzzyCMeans.FuzzyCMeansAlgorithm.FuzzyCMeans(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.FuzzyCMeans.Entity},System.Int32,System.Double,System.Int32,System.Double,System.Collections.Generic.Dictionary{System.Int32,Microsoft.VisualBasic.Language.List{Microsoft.VisualBasic.DataMining.FuzzyCMeans.Entity}}@)">
+ <summary>
+ **Fuzzy clustering** (also referred to as **soft clustering**) is a form of clustering in which 
+ each data point can belong to more than one cluster.
+ </summary>
+ <param name="data"></param>
+ <param name="numberOfClusters%"></param>
+ <param name="fuzzificationParameter#">This parameter value should greater than **1.0**</param>
+ <param name="maxIterates%"></param>
+ <param name="threshold#"></param>
+ <param name="trace"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FuzzyCMeans.FuzzyCMeansAlgorithm.MarkClusterCenter(Microsoft.VisualBasic.DataMining.FuzzyCMeans.Entity,System.Drawing.Color)">
+ <summary>
+ ����Ӧ���ڿ��ӻ�
+ </summary>
+ <param name="clusterCenterPoint"></param>
+ <param name="color"></param>
+ 
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.FuzzyCMeans.Entity.Memberships">
+ <summary>
+ ``Key``键名和数组的下标一样是从0开始的
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.FuzzyCMeans.Entity.ProbablyMembership">
+ <summary>
+ Max probably of <see cref="P:Microsoft.VisualBasic.DataMining.FuzzyCMeans.Entity.Memberships"/> its key value.
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.TFftAlgorithm">
+ <summary>
+ Quick Fourier Transformation. 
+ Some ideas to make the Discrete Fourier Transformation a bit quicker and implemented a lean version of the DFT algorithm.
+ </summary>
+ <remarks>
+ http://www.codeproject.com/Articles/590638/Quick-Fourier-Transformation
+ 
+ 离散傅里叶变换(discrete Fourier transform) 傅里叶分析方法是信号分析的最基本方法，傅里叶变换是傅里叶分析的核心，
+ 通过它把信号从时间域变换到频率域，进而研究信号的频谱结构和变化规律。
+ 在形式上，变换两端（时域和频域上）的序列是有限长的，而实际上这两组序列都应当被认为是离散周期信号的主值序列。
+ 即使对有限长的离散信号作DFT，也应当将其看作其周期延拓的变换。在实际应用中通常采用快速傅里叶变换计算DFT。
+ 
+ 下面给出离散傅里叶变换的变换对： 对于N点序列，它的离散傅里叶变换（DFT）为 其中是自然对数的底数，是虚数单位单位。
+ 通常以符号表示这一变换，即 离散傅里叶变换的逆变换（IDFT）为： 可以记为： 实际上，DFT和IDFT变换式中和式前面的
+ 归一化系数并不重要。有时会将这两个系数都改成。
+ 
+ 
+ 
+ The FFT produce frequency samples (or spectral bin). A frequency sample is a complex number with real and imaginary part. 
+ The imaginary part give the phase and the real part give the amplitude. We have to compute the magnitude in dB from this 
+ to produce a nice spectrogram. The magnitude of a spectral bin is simply the amount of energy for the corresponding 
+ frequency.
+ (FFT产生对波形的频率的采样，一个频率采样是一个复数集合，虚数部分记录了相位，实数部分则记录了振幅。我们必须计算声贝的大小从而产生一个比较不错的分析数据)
+ </remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.TFftAlgorithm.a">
+ <summary>
+ The real value is the cosinus part
+ </summary>
+ <remarks>
+ Compute magnitudes
+ 
+ Now we can compute the magnitude from complex values. This is done with the good old Pythagorean theorem. 
+ Each complex number can be represented in a two-dimensional space. 
+ 
+ The real part is a, and the imaginary part is b.
+ 
+ Magnitudes are stored in a two dimentional array magnitudes[x,y] where x is the nth FFT performed by 
+ SampleTagger and y is the nth magnitude in range [0,fft_size/2]
+ </remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.TFftAlgorithm.b">
+ <summary>
+ The imag value is the sinus part
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.TFftAlgorithm.#ctor(System.Int32)">
+ <summary>
+ 使用本构造函数所创建的FFT对象，需要在后续的代码之中手动设置<see cref="F:Microsoft.VisualBasic.DataMining.TFftAlgorithm.y"></see>的值
+ </summary>
+ <param name="order"><see cref="F:Microsoft.VisualBasic.DataMining.TFftAlgorithm.y"></see>的值的数目</param>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.TFftAlgorithm.FourierTransformation">
+ <summary>
+ Fourier transformation calculation of the Fourier components
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.TFftAlgorithm.InvDFT">
+ <summary>
+ invers Fourier transformation, rebuild the signal in real numbers
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.Clustering.SimpleCluster.offset">
+ <summary>
+ 1 - 右偏移，即<see cref="P:Microsoft.VisualBasic.DataMining.Clustering.SimpleCluster.Items"></see>里面的对象大部分都大于<see cref="P:Microsoft.VisualBasic.DataMining.Clustering.SimpleCluster.Kernel"></see>
+ 0 - 不偏移，则比较有可能为一个核
+ -1 - 左偏移，即大部分对象都小于<see cref="P:Microsoft.VisualBasic.DataMining.Clustering.SimpleCluster.Kernel"></see>
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Clustering.SimpleCluster.Split">
+ <summary>
+ 核分裂
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Clustering.Clustering.Clustering(System.Collections.Generic.IEnumerable{System.Double},System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="data"></param>
+ <param name="d">点之间的间距大小，当小于这个距离的任意两个点都会被划分为一个分类</param>
+ <returns></returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.DynamicProgramming.LCS_Length">
+ <summary>
+ Longest Common Subsequence
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.DynamicProgramming.LCS_Length.MaxLengthSubString(System.String,System.String)">
+ <summary>
+ 比较两个字符串之间的最长的子串
+ </summary>
+ <param name="a"></param>
+ <param name="b"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.FourierTransform">
+ <summary>
+ Fourier transformation.
+ </summary>
+ 
+ <remarks>The class implements one dimensional and two dimensional
+ Discrete and Fast Fourier Transformation.</remarks>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.FourierTransform.Direction">
+ <summary>
+ Fourier transformation direction.
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.FourierTransform.Direction.Forward">
+ <summary>
+ Forward direction of Fourier transformation.
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.FourierTransform.Direction.Backward">
+ <summary>
+ Backward direction of Fourier transformation.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FourierTransform.DFT(System.Numerics.Complex[],Microsoft.VisualBasic.DataMining.FourierTransform.Direction)">
+ <summary>
+ One dimensional Discrete Fourier Transform.
+ </summary>
+ 
+ <param name="data">Data to transform.</param>
+ <param name="direction__1">Transformation direction.</param>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FourierTransform.DFT2(System.Numerics.Complex[0:,0:],Microsoft.VisualBasic.DataMining.FourierTransform.Direction)">
+ <summary>
+ Two dimensional Discrete Fourier Transform.
+ </summary>
+ 
+ <param name="data">Data to transform.</param>
+ <param name="direction__1">Transformation direction.</param>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FourierTransform.FFT(System.Numerics.Complex[],Microsoft.VisualBasic.DataMining.FourierTransform.Direction)">
+ <summary>
+ One dimensional Fast Fourier Transform.
+ </summary>
+ 
+ <param name="data">Data to transform.</param>
+ <param name="direction__1">Transformation direction.</param>
+ 
+ <remarks><para><note>The method accepts <paramref name="data"/> array of 2<sup>n</sup> size
+ only, where <b>n</b> may vary in the [1, 14] range.</note></para></remarks>
+ 
+ <exception cref="T:System.ArgumentException">Incorrect data length.</exception>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.FourierTransform.FFT2(System.Numerics.Complex[0:,0:],Microsoft.VisualBasic.DataMining.FourierTransform.Direction)">
+ <summary>
+ Two dimensional Fast Fourier Transform.
+ </summary>
+ 
+ <param name="data">Data to transform.</param>
+ <param name="direction">Transformation direction.</param>
+ 
+ <remarks><para><note>The method accepts <paramref name="data"/> array of 2<sup>n</sup> size
+ only in each dimension, where <b>n</b> may vary in the [1, 14] range. For example, 16x16 array
+ is valid, but 15x15 is not.</note></para></remarks>
+ 
+ <exception cref="T:System.ArgumentException">Incorrect data length.</exception>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement">
+ <summary>
+ This object represents the factor which decides the node state changes.(决定<see cref="T:Microsoft.VisualBasic.DataMining.DFL_Driver.dflNode"></see>的状态的因素)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement._Weight">
+ <summary>
+ <see cref="F:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement._Weight"></see>越大,则<see cref="F:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement._ABS_Weight"></see>越小，即事件发生的阈值越小
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement._ABS_Weight">
+ <summary>
+  1 - <see cref="M:System.Math.Abs(System.Decimal)"></see>(<see cref="F:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement._Weight"></see>)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement.Weight">
+ <summary>
+ Weight = [-1,1]. (可以带有符号，介于-1到1之间)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement.FunctionalState">
+ <summary>
+ Does this factor effects on the node states changes? value zero is no effects.
+ (当前的这个因素是否会影响目标节点的状态值的改变，0表示不影响)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement.Internal_getEventProbabilities">
+ <summary>
+ 计算公式为 (1-w)， 即本函数返回的值越低，则事件越容易发生，请注意使用 rnd >= Internal_getEventProbabilities() 来描述事件发生
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement.get_InteractionQuantity">
+ <summary>
+ 假若事件发生的话，这个函数决定了<see cref="P:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement.FunctionalState"></see>所返回的计算值
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement.ShadowCopy(Microsoft.VisualBasic.DataMining.DFL_Driver.I_FactorElement,Microsoft.VisualBasic.DataMining.DFL_Driver.dflNode)">
+ <summary>
+ <see cref="T:Microsoft.VisualBasic.DataMining.DFL_Driver.dflNode"></see>对象初始化的时候所使用的方法
+ </summary>
+ <param name="data"></param>
+ <param name="Target"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.DFL_Driver.dflNode">
+ <summary>
+ A node in the fuzzy logic network.(模糊逻辑网络之中的一个节点)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.DFL_Driver.dflNode.get_FactorsCollectionWeight">
+ <summary>
+ 获取当前节点上面的调控因子的数量的总和
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.EntityLDM">
+ <summary>
+ 存储在Csv文件里面的数据模型，近似等价于<see cref="T:Microsoft.VisualBasic.Data.csv.IO.DataSet"/>，只不过多带了一个用来描述cluster的<see cref="P:Microsoft.VisualBasic.DataMining.KMeans.EntityLDM.Cluster"/>属性标签
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Extensions.ValueGroups(System.Collections.Generic.IEnumerable{System.Double},System.Int32)">
+ <summary>
+ Grouping the numeric values by using the kmeans cluserting operations.
+ (对一组数字进行聚类操作，其实在这里就是将这组数值生成Entity数据对象，然后将数值本身作为自动生成的Entity对象的一个唯一属性)
+ </summary>
+ <param name="array"></param>
+ <param name="nd"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Extensions.Kmeans(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.KMeans.EntityLDM},System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ Performance the clustering operation on the entity data model.
+ </summary>
+ <param name="source"></param>
+ <param name="expected"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.CompleteLinkage.Clustering">
+ <summary>
+ 
+ </summary>
+ <remarks>
+ https://github.com/halfjew22/Clustering/blob/master/src/com/lustig/model/Clustering.java
+ </remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.ClusterCollection`1">
+ <summary>
+ A collection of Cluster objects or Clusters
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.ClusterCollection`1.Add(Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster{`0})">
+ <summary>
+ Adds a Cluster to the collection of Clusters
+ </summary>
+ <param name="cluster">A Cluster to be added to the collection of clusters</param>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.KMeans.ClusterCollection`1.Item(System.Int32)">
+ <summary>
+ Returns the Cluster at this index
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.Entity">
+ <summary>
+ 计算所使用的对象实例实体模型
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Entity.Load(System.String,System.String)">
+ <summary>
+
+ </summary>
+ <param name="path">Csv文件之中除了第一列是名称标识符，其他的都必须是该实体对象的属性</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Entity.op_Equality(Microsoft.VisualBasic.DataMining.KMeans.Entity,Microsoft.VisualBasic.DataMining.KMeans.Entity)">
+ <summary>
+ 值相等判断
+ </summary>
+ <param name="a"></param>
+ <param name="b"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster`1">
+ <summary>
+ A class containing a group of data with similar characteristics (cluster), KMeans Cluster
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster`1.ClusterSum">
+ <summary>
+ The sum of all the data in the cluster
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster`1.ClusterMean">
+ <summary>
+ The mean of all the data in the cluster
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster`1.Add(`0)">
+ <summary>
+ Adds a single dimension array data to the cluster.
+ (请注意，每当使用这个方法新添加一个对象的时候，都会导致均值被重新计算)
+ </summary>
+ <param name="data">A 1-dimensional array containing data that will be added to the cluster</param>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster`1.Item(System.Int32)">
+ <summary>
+ Returns the one dimensional array data located at the index
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansCluster`1.refresh">
+ <summary>
+ Will keep the center member variable, but clear the list of points
+ within the cluster.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm">
+ <summary>
+ This class implement a KMeans clustering algorithm.(请注意，实体对象的属性必须要长度一致)
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm.EuclideanDistance(System.Double[],System.Double[])">
+ <summary>
+ Calculates the Euclidean Distance Measure between two data points
+ </summary>
+ <param name="X">An array with the values of an object or datapoint</param>
+ <param name="Y">An array with the values of an object or datapoint</param>
+ <returns>Returns the Euclidean Distance Measure Between Points X and Points Y</returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm.ManhattanDistance(System.Double[],System.Double[])">
+ <summary>
+ Calculates the Manhattan Distance Measure between two data points
+ </summary>
+ <param name="X">An array with the values of an object or datapoint</param>
+ <param name="Y">An array with the values of an object or datapoint</param>
+ <returns>Returns the Manhattan Distance Measure Between Points X and Points Y</returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm.ClusterMean(System.Double[0:,0:])">
+ <summary>
+ Calculates The Mean Of A Cluster OR The Cluster Center
+ 
+ ```vbnet
+ Dim cluster#(,) = {
+     {15, 32, 35.6},
+     {19, 54, 65.1}
+ }
+ Dim centroid#() = Kmeans.ClusterMean(cluster)
+
+ Call $"<br/>Cluster mean Calc: {centroid}".__DEBUG_ECHO
+ ```
+ </summary>
+ <param name="cluster">
+ A two-dimensional array containing a dataset of numeric values
+ </param>
+ <returns>
+ Returns an Array Defining A Data Point Representing The Cluster Mean or Centroid
+ </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm.ClusterDataSet``1(System.Int32,System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Int32,System.Boolean)">
+ <summary>
+ Seperates a dataset into clusters or groups with similar characteristics
+ </summary>
+ <param name="clusterCount">
+ The number of clusters or groups to form.(当这个参数值为0的时候，函数也会返回一个空集合)
+ </param>
+ <param name="source">
+ An array containing data that will be clustered, the elements number must greater than 2, at least 3 elements.
+ (里面的元素至少需要三个)
+ </param>
+ <returns>A collection of clusters of data</returns>
+ <param name="parallel">
+ 默认是使用并行化的计算代码以通过牺牲内存空间的代价来获取高性能的计算，非并行化的代码比较适合低内存的设备上面运行
+ </param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm.ClusterDataSet``1(Microsoft.VisualBasic.DataMining.KMeans.ClusterCollection{``0},``0[],System.Boolean)">
+ <summary>
+ Seperates a dataset into clusters or groups with similar characteristics
+ </summary>
+ <param name="clusters">A collection of data clusters</param>
+ <param name="data">An array containing data to be clustered</param>
+ <param name="parallel">是否采用并行算法</param>
+ <returns>A collection of clusters of data</returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansAlgorithm.ToFloatMatrix(System.Data.DataTable)">
+ <summary>
+ Converts a System.Data.DataTable to a 2-dimensional array
+ </summary>
+ <param name="table">A System.Data.DataTable containing data to cluster</param>
+ <returns>A 2-dimensional array containing data to cluster</returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.MarginalLikelihoodAnalysis">
+ <summary>
+ @author Marc Suchard
+ @author Alexei Drummond
+ 
+ Source translated from ``model_P.c`` (a component of BAli-Phy by Benjamin Redelings and Marc Suchard
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.MarginalLikelihoodAnalysis.#ctor(System.Collections.Generic.IList{System.Double},System.Int32,System.String,System.Int32)">
+ <summary>
+ Constructor
+ </summary>
+ <param name="sample"> </param>
+ <param name="burnin">          used for 'toString' display purposes only </param>
+ <param name="analysisType"> </param>
+ <param name="bootstrapLength"> a value of zero will turn off bootstrapping </param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.MarginalLikelihoodAnalysis.logMarginalLikelihoodArithmetic(System.Collections.Generic.IList{System.Nullable{System.Double}})">
+ <summary>
+ Calculates the log marginal likelihood of a model using the arithmetic mean estimator
+ </summary>
+ <param name="v"> a posterior sample of logLikelihoods </param>
+ <returns> the log marginal likelihood </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.MarginalLikelihoodAnalysis.logMarginalLikelihoodHarmonic(System.Collections.Generic.IList{System.Double})">
+ <summary>
+ Calculates the log marginal likelihood of a model using Newton and Raftery's harmonic mean estimator
+ </summary>
+ <param name="v"> a posterior sample of logLikelihoods </param>
+ <returns> the log marginal likelihood </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.MarginalLikelihoodAnalysis.logMarginalLikelihoodAICM(System.Collections.Generic.IList{System.Double})">
+ <summary>
+ Calculates the AICM of a model using method-of-moments from Raftery et al. (2007)
+ </summary>
+ <param name="v"> a posterior sample of logLikelihoods </param>
+ <returns> the AICM (lower values are better) </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.MarginalLikelihoodAnalysis.logMarginalLikelihoodSmoothed(System.Collections.Generic.IList{System.Double},System.Double,System.Double)">
+ <summary>
+ Calculates the log marginal likelihood of a model using Newton and Raftery's smoothed estimator
+ </summary>
+ <param name="v">     a posterior sample of logLikelihood </param>
+ <param name="delta"> proportion of pseudo-samples from the prior </param>
+ <param name="Pdata"> current estimate of the log marginal likelihood </param>
+ <returns> the log marginal likelihood </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Abundance.RelativeAbundances``1(System.Collections.Generic.IEnumerable{``0})">
+ <summary>
+ x除以最大的值就是相对丰度
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="source"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.TrainingUtils">
+ <summary>
+ Tools for training the neuron network
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.TrainingUtils.Corrects(System.Double[],System.Double[],System.Double[],System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="input">The inputs data</param>
+ <param name="convertedResults">The error outputs</param>
+ <param name="expectedResults">The corrects output</param>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.DataSet">
+ <summary>
+ The training dataset
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.NeuralNetwork.DataSet.Values">
+ <summary>
+ Neuron network input parameters
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.NeuralNetwork.DataSet.Targets">
+ <summary>
+ The network expected output values
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.DataSet.#ctor(System.Double[],System.Double[])">
+ <summary>
+ 
+ </summary>
+ <param name="values__1">Neuron network input parameters</param>
+ <param name="targets__2">The network expected output values</param>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.NeuralNetwork.TrainingType.Epoch">
+ <summary>
+ <see cref="F:Microsoft.VisualBasic.DataMining.NeuralNetwork.Helpers.MaxEpochs"/>
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.NeuralNetwork.TrainingType.MinimumError">
+ <summary>
+ <see cref="F:Microsoft.VisualBasic.DataMining.NeuralNetwork.Helpers.MinimumError"/>
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.Encoder`1.Decode(System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="out">神经网络的输出值</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.Network.#ctor(System.Int32,System.Int32,System.Int32,System.Double,System.Double,Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.IActivationFunction)">
+ <summary>
+ 
+ </summary>
+ <param name="inputSize">>=2</param>
+ <param name="hiddenSize">>=2</param>
+ <param name="outputSize">>=1</param>
+ <param name="learnRate__1"></param>
+ <param name="momentum__2"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.Network.Compute(System.Double[])">
+ <summary>
+ Compute result output for the neuron network <paramref name="inputs"/>.
+ (请注意ANN的输出值是在0-1之间的，所以还需要进行额外的编码和解码)
+ </summary>
+ <param name="inputs"></param>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.NeuralNetwork.Neuron.IFunc">
+ <summary>
+ The active function
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction">
+ <summary>
+ Bipolar sigmoid activation function.
+ </summary>
+
+ <remarks><para>The class represents bipolar sigmoid activation function with
+ the next expression:
+ <code lang="none">
+                2
+ f(x) = ------------------ - 1
+        1 + exp(-alpha * x)
+
+           2 * alpha * exp(-alpha * x )
+ f'(x) = -------------------------------- = alpha * (1 - f(x)^2) / 2
+           (1 + exp(-alpha * x))^2
+ </code>
+ </para>
+ 
+ <para>Output range of the function: <b>[-1, 1]</b>.</para>
+ 
+ <para>Functions graph:</para>
+ <img src="img/neuro/sigmoid_bipolar.bmp" width="242" height="172" />
+ </remarks>
+ 
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.Alpha">
+ <summary>
+ Sigmoid's alpha value.
+ </summary>
+
+ <remarks><para>The value determines steepness of the function. Increasing value of
+ this property changes sigmoid to look more like a threshold function. Decreasing
+ value of this property makes sigmoid to be very smooth (slowly growing from its
+ minimum value to its maximum value).</para>
+
+ <para>Default value is set to <b>2</b>.</para>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.#ctor">
+ <summary>
+ Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction"/> class.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.#ctor(System.Double)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction"/> class.
+ </summary>
+ 
+ <param name="alpha">Sigmoid's alpha value.</param>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.Function(System.Double)">
+ <summary>
+ Calculates function value.
+ </summary>
+
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function output value, <i>f(x)</i>.</returns>
+
+ <remarks>The method calculates function value at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.Derivative(System.Double)">
+ <summary>
+ Calculates function derivative.
+ </summary>
+ 
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function derivative, <i>f'(x)</i>.</returns>
+ 
+ <remarks>The method calculates function derivative at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.Derivative2(System.Double)">
+ <summary>
+ Calculates function derivative.
+ </summary>
+ 
+ <param name="y">Function output value - the value, which was obtained
+ with the help of "Function" method.</param>
+ 
+ <returns>Function derivative, <i>f'(x)</i>.</returns>
+
+ <remarks><para>The method calculates the same derivative value as the
+ <see cref="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.Derivative(System.Double)"/> method, but it takes not the input <b>x</b> value
+ itself, but the function value, which was calculated previously with
+ the help of "Function" method.</para>
+ 
+ <para><note>Some applications require as function value, as derivative value,
+ so they can save the amount of calculations using this method to calculate derivative.</note></para>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.BipolarSigmoidFunction.Clone">
+ <summary>
+ Creates a new object that is a copy of the current instance.
+ </summary>
+ 
+ <returns>
+ A new object that is a copy of this instance.
+ </returns>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.IActivationFunction">
+ <summary>
+ Activation function interface.
+ </summary>
+ 
+ <remarks>All activation functions, which are supposed to be used with
+ neurons, which calculate their output as a function of weighted sum of
+ their inputs, should implement this interfaces.
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.IActivationFunction.Function(System.Double)">
+ <summary>
+ Calculates function value.
+ </summary>
+
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function output value, <i>f(x)</i>.</returns>
+
+ <remarks>The method calculates function value at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.IActivationFunction.Derivative(System.Double)">
+ <summary>
+ Calculates function derivative.
+ </summary>
+ 
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function derivative, <i>f'(x)</i>.</returns>
+ 
+ <remarks>The method calculates function derivative at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.IActivationFunction.Derivative2(System.Double)">
+ <summary>
+ Calculates function derivative.
+ </summary>
+ 
+ <param name="y">Function output value - the value, which was obtained
+ with the help of "Function" method.</param>
+ 
+ <returns>Function derivative, <i>f'(x)</i>.</returns>
+ 
+ <remarks><para>The method calculates the same derivative value as the
+ <see cref="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.IActivationFunction.Derivative(System.Double)"/> method, but it takes not the input <b>x</b> value
+ itself, but the function value, which was calculated previously with
+ the help of "Function" method.</para>
+ 
+ <para><note>Some applications require as function value, as derivative value,
+ so they can save the amount of calculations using this method to calculate derivative.</note></para>
+ </remarks>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction">
+ <summary>
+ Sigmoid activation function.
+ </summary>
+
+ <remarks><para>The class represents sigmoid activation function with
+ the next expression:
+ <code lang="none">
+                1
+ f(x) = ------------------
+        1 + exp(-alpha * x)
+
+           alpha * exp(-alpha * x )
+ f'(x) = ---------------------------- = alpha * f(x) * (1 - f(x))
+           (1 + exp(-alpha * x))^2
+ </code>
+ </para>
+
+ <para>Output range of the function: <b>[0, 1]</b>.</para>
+ 
+ <para>Functions graph:</para>
+ <img src="img/neuro/sigmoid.bmp" width="242" height="172" />
+ </remarks>
+ 
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.Alpha">
+ <summary>
+ Sigmoid's alpha value.
+ </summary>
+ 
+ <remarks><para>The value determines steepness of the function. Increasing value of
+ this property changes sigmoid to look more like a threshold function. Decreasing
+ value of this property makes sigmoid to be very smooth (slowly growing from its
+ minimum value to its maximum value).</para>
+
+ <para>Default value is set to <b>2</b>.</para>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.#ctor">
+ <summary>
+ Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction"/> class.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.#ctor(System.Double)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction"/> class.
+ </summary>
+ 
+ <param name="alpha">Sigmoid's alpha value.</param>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.Function(System.Double)">
+ <summary>
+ Calculates function value.
+ </summary>
+
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function output value, <i>f(x)</i>.</returns>
+
+ <remarks>The method calculates function value at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.Derivative(System.Double)">
+ <summary>
+ Calculates function derivative.
+ </summary>
+ 
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function derivative, <i>f'(x)</i>.</returns>
+ 
+ <remarks>The method calculates function derivative at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.Derivative2(System.Double)">
+ <summary>
+ Calculates function derivative.
+ </summary>
+ 
+ <param name="y">Function output value - the value, which was obtained
+ with the help of "Function" method.</param>
+ 
+ <returns>Function derivative, <i>f'(x)</i>.</returns>
+ 
+ <remarks><para>The method calculates the same derivative value as the
+ <see cref="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.Derivative(System.Double)"/> method, but it takes not the input <b>x</b> value
+ itself, but the function value, which was calculated previously with
+ the help of "Function" method.</para>
+ 
+ <para><note>Some applications require as function value, as derivative value,
+ so they can save the amount of calculations using this method to calculate derivative.</note></para>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.SigmoidFunction.Clone">
+ <summary>
+ Creates a new object that is a copy of the current instance.
+ </summary>
+ 
+ <returns>
+ A new object that is a copy of this instance.
+ </returns>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction">
+ <summary>
+ Threshold activation function.
+ </summary>
+
+ <remarks><para>The class represents threshold activation function with
+ the next expression:
+ <code lang="none">
+ f(x) = 1, if x >= 0, otherwise 0
+ </code>
+ </para>
+ 
+ <para>Output range of the function: <b>[0, 1]</b>.</para>
+ 
+ <para>Functions graph:</para>
+ <img src="img/neuro/threshold.bmp" width="242" height="172" />
+ </remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction.#ctor">
+ <summary>
+ Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction"/> class.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction.Function(System.Double)">
+ <summary>
+ Calculates function value.
+ </summary>
+
+ <param name="x">Function input value.</param>
+ 
+ <returns>Function output value, <i>f(x)</i>.</returns>
+
+ <remarks>The method calculates function value at point <paramref name="x"/>.</remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction.Derivative(System.Double)">
+ <summary>
+ Calculates function derivative (not supported).
+ </summary>
+ 
+ <param name="x">Input value.</param>
+ 
+ <returns>Always returns 0.</returns>
+ 
+ <remarks><para><note>The method is not supported, because it is not possible to
+ calculate derivative of the function.</note></para></remarks>
+
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction.Derivative2(System.Double)">
+ <summary>
+ Calculates function derivative (not supported).
+ </summary>
+ 
+ <param name="y">Input value.</param>
+ 
+ <returns>Always returns 0.</returns>
+ 
+ <remarks><para><note>The method is not supported, because it is not possible to
+ calculate derivative of the function.</note></para></remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.ThresholdFunction.Clone">
+ <summary>
+ Creates a new object that is a copy of the current instance.
+ </summary>
+ 
+ <returns>
+ A new object that is a copy of this instance.
+ </returns>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.IFuncs.Sigmoid">
+ <summary>
+ https://github.com/trentsartain/Neural-Network/blob/master/NeuralNetwork/NeuralNetwork/Network/Sigmoid.cs
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.Synapse">
+ <summary>
+ （神经元的）突触 a connection between two nerve cells
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.NeuralNetwork.Synapse.Weight">
+ <summary>
+ 两个神经元之间的连接强度
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Serials.PeriodAnalysis.PeriodAnalysis.Analysis(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.Serials.PeriodAnalysis.SerialsVarialble},System.String,System.UInt32)">
+ <summary>
+ 
+ </summary>
+ <param name="UniqueId"></param>
+ <param name="WindowSize"></param>
+ <returns></returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Serials.PeriodAnalysis.PeriodAnalysis.Analysis(Microsoft.VisualBasic.DataMining.Serials.PeriodAnalysis.SerialsVarialble,System.UInt32)">
+ <summary>
+ 返回的数据是周期变化数据，故而假若需要计算频率变化的话，还需要求倒数
+ </summary>
+ <param name="SerialsData"></param>
+ <param name="WindowSize"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Serials.PeriodAnalysis.PeriodAnalysis.LoadDataFromCsv(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.Statistics">
+ <summary>
+ Set of statistics functions.
+ </summary>
+ 
+ <remarks>The class represents collection of simple functions used
+ in statistics.</remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.Mean(System.Int32[])">
+ <summary>
+ Calculate mean value.
+ </summary>
+ 
+ <param name="values">Histogram array.</param>
+ 
+ <returns>Returns mean value.</returns>
+ 
+ <remarks><para>The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).</para>
+ 
+ <para>Sample usage:</para>
+ <code>
+ // create histogram array
+ int[] histogram = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };
+ // calculate mean value
+ double mean = Statistics.Mean( histogram );
+ // output it (5.759)
+ Console.WriteLine( "mean = " + mean.ToString( "F3" ) );
+ </code>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.StdDev(System.Int32[])">
+ <summary>
+ Calculate standard deviation.
+ </summary>
+ <param name="values">Histogram array.</param>
+ <returns>Returns value of standard deviation.</returns>
+ <remarks>
+ The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).
+ 
+ Sample usage:
+ 
+ ```vbnet
+ ' create histogram array
+ Dim histogram As Integer() = New Integer() { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 }
+ ' calculate standard deviation value
+ Dim stdDev = Statistics.StdDev( histogram )
+ '' output it (1.999)
+ Console.WriteLine( "std.dev. = " &amp; stdDev.ToString( "F3" ) )
+ ```
+ </remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.StdDev(System.Int32[],System.Double)">
+ <summary>
+ Calculate standard deviation.
+ </summary>
+ 
+ <param name="values">Histogram array.</param>
+ <param name="mean">Mean value of the histogram.</param>
+ 
+ <returns>Returns value of standard deviation.</returns>
+ 
+ <remarks><para>The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).</para>
+ 
+ <para>The method is an equevalent to the <see cref="M:Microsoft.VisualBasic.DataMining.Statistics.StdDev(System.Int32[])"/> method,
+ but it relieas on the passed mean value, which is previously calculated
+ using <see cref="M:Microsoft.VisualBasic.DataMining.Statistics.Mean(System.Int32[])"/> method.</para>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.Median(System.Int32[])">
+ <summary>
+ Calculate median value.
+ </summary>
+ 
+ <param name="values">Histogram array.</param>
+ 
+ <returns>Returns value of median.</returns>
+ 
+ <remarks>
+ <para>The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).</para>
+ 
+ <para><note>The median value is calculated accumulating histogram's
+ values starting from the <b>left</b> point until the sum reaches 50% of
+ histogram's sum.</note></para>
+ 
+ <para>Sample usage:</para>
+ <code>
+ // create histogram array
+ int[] histogram = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };
+ // calculate median value
+ int median = Statistics.Median( histogram );
+ // output it (6)
+ Console.WriteLine( "median = " + median );
+ </code>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.GetRange(System.Int32[],System.Double)">
+ <summary>
+ Get range around median containing specified percentage of values.
+ </summary>
+ 
+ <param name="values">Histogram array.</param>
+ <param name="percent">Values percentage around median.</param>
+ 
+ <returns>Returns the range which containes specifies percentage
+ of values.</returns>
+ 
+ <remarks>
+ <para>The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).</para>
+ 
+ <para>The method calculates range of stochastic variable, which summary probability
+ comprises the specified percentage of histogram's hits.</para>
+ 
+ <para>Sample usage:</para>
+ <code>
+ // create histogram array
+ int[] histogram = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };
+ // get 75% range around median
+ IntRange range = Statistics.GetRange( histogram, 0.75 );
+ // output it ([4, 8])
+ Console.WriteLine( "range = [" + range.Min + ", " + range.Max + "]" );
+ </code>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.Entropy(System.Int32[])">
+ <summary>
+ Calculate entropy value.
+ </summary>
+ 
+ <param name="values">Histogram array.</param>
+ 
+ <returns>Returns entropy value of the specified histagram array.</returns>
+ 
+ <remarks><para>The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).</para>
+ 
+ <para>Sample usage:</para>
+ <code>
+ // create histogram array with 2 values of equal probabilities
+ int[] histogram1 = new int[2] { 3, 3 };
+ // calculate entropy
+ double entropy1 = Statistics.Entropy( histogram1 );
+ // output it (1.000)
+ Console.WriteLine( "entropy1 = " + entropy1.ToString( "F3" ) );
+ 
+ // create histogram array with 4 values of equal probabilities
+ int[] histogram2 = new int[4] { 1, 1, 1, 1 };
+ // calculate entropy
+ double entropy2 = Statistics.Entropy( histogram2 );
+ // output it (2.000)
+ Console.WriteLine( "entropy2 = " + entropy2.ToString( "F3" ) );
+ 
+ // create histogram array with 4 values of different probabilities
+ int[] histogram3 = new int[4] { 1, 2, 3, 4 };
+ // calculate entropy
+ double entropy3 = Statistics.Entropy( histogram3 );
+ // output it (1.846)
+ Console.WriteLine( "entropy3 = " + entropy3.ToString( "F3" ) );
+ </code>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Statistics.Mode(System.Int32[])">
+ <summary>
+ Calculate mode value.
+ </summary>
+ 
+ <param name="values">Histogram array.</param>
+ 
+ <returns>Returns mode value of the histogram array.</returns>
+ 
+ <remarks>
+ <para>The input array is treated as histogram, i.e. its
+ indexes are treated as values of stochastic function, but
+ array values are treated as "probabilities" (total amount of
+ hits).</para>
+ 
+ <para><note>Returns the minimum mode value if the specified histogram is multimodal.</note></para>
+
+ <para>Sample usage:</para>
+ <code>
+ // create array
+ int[] values = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };
+ // calculate mode value
+ int mode = Statistics.Mode( values );
+ // output it (7)
+ Console.WriteLine( "mode = " + mode );
+ </code>
+ </remarks>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.SVD.SVDecomposition(System.Double[0:,0:],System.Double[]@,System.Double[0:,0:]@)">
+ <summary>
+ Singular Value Decomposition
+ </summary>
+ <param name="a">Number of rows in A must be greater or equal to number of columns</param>
+ <param name="w"></param>
+ <param name="v"></param>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.WaveletTransform">
+ <summary>
+ 小波变换工具
+ </summary>
+ <remarks>
+ 
+ The first DWT was invented by the Hungarian mathematician Alfréd Haar. For an input represented by a 
+ list of 2n numbers, the Haar wavelet transform may be considered to simply pair up input values, 
+ storing the difference and passing the sum. This process is repeated recursively, pairing up the sums 
+ to provide the next scale: finally resulting in 2n-1 differences and one final sum.
+ 
+ Suppose you are given N values
+ 
+ x = (x1, x2, … xN)
+ 
+ where N is even.(X向量的元素的个数必须是偶数)
+ 
+ We take pair-wise average of numbers
+ 
+ sk = (x2k + x2k+1)/2 for k=0, …, N/2 -1
+ 
+ For example,
+ 
+ x = (6, 12, 15, 15, 14, 12, 120, 116) -> s = (9, 15, 13, 118)
+ 
+ We need second list of data d so that the original list x can be recovered from s and d.
+ 
+ For dk (called directed distances), we have:
+ 
+ dk = (x2k - x2k+1)/2 for k=0, …, N/2 -1
+ 
+ The process is invertible since:
+ 
+ sk + dk = (x2k + x2k+1)/2 + (x2k - x2k+1)/2 = x2k
+ 
+ sk - dk = (x2k + x2k+1)/2 - (x2k - x2k+1)/2 = x2k+1
+ 
+ 
+ So we map x = (x1, x2, … , xN) to (s | d) = (s1, … , sN/2 | d1, … , dN/2).
+ 
+ Using our example values, we have:
+ 
+ (6, 12, 15, 15, 14, 12, 120, 116) -> (9, 15, 13, 118 | -3, 0, 1, 2)
+ 
+ This process is repeated recursively for s:
+ 
+ (9, 15, 13, 118 | -3, 0, 1, 2) -> (12, 65.5 | -3, -52.5 | -3, 0, 1, 2)
+ 
+ (12, 65.5 | -3, -52.5 | -3, 0, 1, 2) -> (38.75 | -26.75 | -3, -52.5 | -3, 0, 1, 2)
+ 
+ So final result is:
+ 
+ (38.75, -26.75, -3, -52.5, -3, 0, 1, 2)
+ 
+ Why might people prefer the data in this form?
+ 
+ We can identify large changes in the differences portion d of the transform.
+ It is easier to quantize the data in this form.
+ The transform concentrates the information (energy) in the signal in fewer values.
+ And the obvious answer: fewer digits!!
+ In case of images, we need 2D FWT. First, we perform 1D FWT for all rows, and next, for all columns. 
+ For color Images, we deal with RGB components of color, and perform Haar Transform for each component 
+ separately. Any component (R G B) has values from 0 to 255 to before transformation we scale this 
+ values. For displaying image after transformation, we scale back transformed values.
+ 
+ </remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.WaveletTransform.FWT(System.Double[]@)">
+ <summary>
+   Discrete Haar Wavelet Transform
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.WaveletTransform.FWT(System.Double[0:,0:]@,System.Int32)">
+ <summary>
+   Discrete Haar Wavelet 2D Transform
+ </summary>
+ <param name="iterations">Iteration must be Integer from 1 to</param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.WaveletTransform.IWT(System.Double[]@)">
+ <summary>
+   Inverse Haar Wavelet Transform
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.WaveletTransform.IWT(System.Double[0:,0:]@,System.Int32)">
+ <summary>
+   Inverse Haar Wavelet 2D Transform
+ </summary>
+ <param name="iterations">Iteration must be Integer from 1 to</param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.ValueMapping.ModalNumber(System.Int32[])">
+ <summary>
+ Gets the modal number of the ranking mapping data set.(求取众数)
+ </summary>
+ <param name="data">The ranked mapping encoding value.(经过Rank Mapping处理过后的编码值)</param>
+ <returns></returns>
+ <remarks>
+ 当不存在相同的分组元素数目的时候，会直接取第一个元素的值作为众数
+ 当存在相同的分组元素数目的时候，会取最大的元素值作为众数
+ </remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BeliefNode">
+ <summary>
+ 贝叶斯信念网络中的一个节点
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BeliefNode.Parents">
+ <summary>
+ 本节点的父节点
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BeliefNode.CP_Table">
+ <summary>
+ CP Table，用于把各节点和它的直接父节点相关联起来的一个概率表
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BeliefNetwork">
+ <summary>
+ 贝叶斯信念网络
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BeliefNetwork.SetNodes(System.Int32[])">
+ <summary>
+ 
+ </summary>
+ <param name="Array">Array的元素个数必须与节点的数目相等</param>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BeliefNetwork.CreateFrom(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="File">网络数据的文件路径</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Kernel.BayesianBeliefNetwork.BElim.GetBelief(System.Int32[],System.Int32[])">
+ <summary>
+ 计算条件概率: P(x|conditions)，对于计算对象x和计算条件condition二者的元素必须要错开。对于错开部分的空的元素请使用-1来填充
+ </summary>
+ <param name="x"></param>
+ <param name="conditions"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.Kernel.Classifier.Neuron.OutputFunction">
+ <summary>
+ Weights, Entity, OutputValue
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Kernel.Classifier.Neuron.Entity.CastTo(Microsoft.VisualBasic.Data.csv.IO.RowObject)">
+ <summary>
+ 
+ </summary>
+ <param name="row">第一个元素为分类，其余元素为属性</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.Kernel.Classifier.Bayesian">
+ <summary>
+ 朴素贝叶斯分类器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.Kernel.Classifier.Bayesian.Entities">
+ <summary>
+ 原始的数据集合
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Kernel.Classifier.Bayesian.P(Microsoft.VisualBasic.DataMining.ComponentModel.Entity,System.Int32)">
+ <summary>
+ P(X|Y=y)
+ </summary>
+ <param name="X"></param>
+ <param name="Y"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Kernel.Classifier.Bayesian.P(System.Int32[],System.Int32)">
+ <summary>
+ P(X|Y=y)
+ </summary>
+ <param name="X">Subject Condition</param>
+ <param name="Y">Target Classify</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

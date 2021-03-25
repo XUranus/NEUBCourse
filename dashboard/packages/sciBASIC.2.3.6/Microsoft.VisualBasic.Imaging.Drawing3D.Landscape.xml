@@ -1,0 +1,140 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.Imaging.Drawing3D.Landscape
+</name>
+</assembly>
+<members>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.Project.Thumbnail">
+ <summary>
+ ``*.3mf/Metadata/thumbnail.png``
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.Project.model">
+ <summary>
+ ``*.3mf/3D/3dmodel.model``
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.Project.GetSurfaces(System.Boolean)">
+ <summary>
+ Get all of the 3D surface model data in this 3mf project.
+ </summary>
+ <param name="centraOffset"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.IO.Open(System.String)">
+ <summary>
+ Open ``*.3mf`` model file.
+ </summary>
+ <param name="zip$">``*.3mf``</param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.XML.XmlModel3D">
+ <summary>
+ ``3D/3dmodel.model`` xml file.
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.XML.mesh.GetSurfaces(System.Drawing.Brush[])">
+ <summary>
+ <see cref="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.XML.triangle.p1"/>
+ </summary>
+ <param name="materials"></param>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.XML.triangle.pid">
+ <summary>
+ 当前的这个三角形面的所属组件的编号
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.XML.triangle.p1">
+ <summary>
+ 颜色索引值
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Vendor_3mf.XML.base.displaycolor">
+ <summary>
+ OLE颜色值
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Vector.Point3D">
+ <summary>
+ 2017-1-30
+ 因为在进行XML存储的时候，可能会由于需要调整格式对齐数字，所以在这里使用字符串来存储数据，
+ 否则直接使用数组会因为格式的变化而无法被读取
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Graphics">
+ <summary>
+ The data model of the landscape 3D model.
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Graphics.bg">
+ <summary>
+ The scene paint background, its value definition is the same as <see cref="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface.paint"/>
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface">
+ <summary>
+ 方便将3D模型保存与XML文件之中的数据模型对象
+ </summary>
+ <remarks>
+ 2017.1.30
+ 由于受到XML序列化的限制，这里就不再实现这个枚举接口了
+ </remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface.vertices">
+ <summary>
+ 请注意，在这里面的点都是有先后顺序分别的，为了模型文件的XML文档结构的可读性，
+ 在这里并不是直接使用<see cref="T:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D"/>来保存的，而是使用一个向量来保存
+ ``xyz``的坐标数据
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface.paint">
+ <summary>
+ 这个是本``表面``对象所喷涂的纹理的定义，可以是颜色的名称或者表达式，也可以是图片的相对路径的引用
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface.Brush">
+ <summary>
+ 将<see cref="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface.paint"/>资源字符串转换为相对应的<see cref="P:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Data.Surface.Brush"/>画刷对象.
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Canvas">
+<summary>
+Canvas
+</summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Landscape.Canvas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

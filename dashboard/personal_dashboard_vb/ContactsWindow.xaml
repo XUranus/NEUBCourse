@@ -1,0 +1,131 @@
+﻿<Window x:Class="ContactsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:personal_dashboard_vb"
+        mc:Ignorable="d"
+        
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="黑体"
+        
+        Title="AccountWindow" Height="720" Width="1200" Loaded="Window_Loaded">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <materialDesign:Card Grid.Row="0" Background="Indigo" Height="50">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" >
+               Contacts Management
+            </TextBlock>
+        </materialDesign:Card>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="5">
+                <materialDesign:Card Grid.Row="1" Margin="5" Height="600">
+                    <ListBox SelectionChanged="ListView_SelectionChanged" Name="ContactsListBox">
+                    </ListBox>
+                </materialDesign:Card>
+            </Grid>
+            <WrapPanel Margin="10" Grid.Column="1" >
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+
+                    <materialDesign:Card Grid.Row="0" Height="400" Margin="5" Width="800">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="70"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Margin="10" FontSize="30" VerticalAlignment="Center"><Run Text=" " Name="EditPanelKind" /><Run Text="添加新联系人"/></TextBlock>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <Viewbox Width="100" Height="100" Margin="30">
+                                        <Canvas Width="24" Height="24">
+                                            <Path Data="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" Fill="Black" />
+                                        </Canvas>
+                                    </Viewbox>
+                                    <Button Margin="50" Click="Button_Click_1">保存</Button>
+                                </StackPanel>
+                                <Grid Height="250" Margin="5" MinWidth="400" Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                        <RowDefinition Height="40"/>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">姓名</Label>
+                                    <TextBox Grid.Row="0" Grid.Column="1" Name="NameTextBox"></TextBox>
+                                    <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">邮箱</Label>
+                                    <TextBox Grid.Row="1" Grid.Column="1" Name="MaillTextBox"></TextBox>
+                                    <Label Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">电话</Label>
+                                    <TextBox Grid.Row="2" Grid.Column="1" Name="PhoneTextBox"></TextBox>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        
+                    </materialDesign:Card>
+
+                    <materialDesign:Card Margin="5" Grid.Row="1" Width="800" Height="200">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" >
+                                <Viewbox Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                                    <Canvas Width="24" Height="24">
+                                        <Path Data="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A2.25,2.25 0 0,1 14.25,11A2.25,2.25 0 0,1 12,13.25A2.25,2.25 0 0,1 9.75,11A2.25,2.25 0 0,1 12,8.75M12,15C13.5,15 16.5,15.75 16.5,17.25V18H7.5V17.25C7.5,15.75 10.5,15 12,15Z" Fill="Black" />
+                                    </Canvas>
+                                </Viewbox>
+                                <Label FontSize="25" HorizontalAlignment="Center" Name="DetailNameLabel"></Label>
+                            </StackPanel>
+                            <Grid MinHeight="130" Margin="5" MinWidth="100" Grid.Column="1" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">邮箱</Label>
+                                <TextBox Grid.Row="0" Grid.Column="1" Name="DetailMail"></TextBox>
+                                <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">电话</Label>
+                                <TextBox Grid.Row="1" Grid.Column="1" Name="DetailPhone"></TextBox>
+                                <Button Foreground="Red" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Style="{DynamicResource MaterialDesignToolForegroundButton}" Content="删除联系人" Margin="0,0,0,-14.2" Click="Button_Click_2"/>
+                            </Grid>
+
+                        </Grid>
+                    </materialDesign:Card>
+                </Grid>
+            </WrapPanel>
+        </Grid>
+
+    </Grid>
+
+
+</Window>

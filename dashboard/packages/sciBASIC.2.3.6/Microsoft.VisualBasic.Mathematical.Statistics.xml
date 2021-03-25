@@ -1,0 +1,512 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.Mathematical.Statistics
+</name>
+</assembly>
+<members>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.TtestResult.DegreeFreedom">
+ <summary>
+ the degrees of freedom for the t-statistic.
+ </summary>
+ <returns></returns>
+ <remarks>Welch–Satterthwaite equation 的计算结果为小数</remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.TtestResult.Pvalue">
+ <summary>
+ the p-value For the test.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.TtestResult.TestValue">
+ <summary>
+ the value of the t-statistic.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.TtestResult.Alternative">
+ <summary>
+ the alternative hypothesis.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.TtestResult.Mean">
+ <summary>
+ Sample mean
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.TtestResult.Valid">
+ <summary>
+ Alternative hypothesis result
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.Hypothesis.Greater">
+ <summary>
+ ``mu > mu0``
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.Hypothesis.Less">
+ <summary>
+ ``mu &lt; mu0``
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.Hypothesis.TwoSided">
+ <summary>
+ ``mu &lt;> mu0``
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.t">
+ <summary>
+ Performs one and two sample t-tests on vectors of data.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.t.Test(System.Collections.Generic.IEnumerable{System.Double},Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.Hypothesis,System.Double,System.Double)">
+ <summary>
+ Performs one sample t-tests on vectors of data.
+ </summary>
+ <param name="x">a (non-empty) numeric vector of data values.</param>
+ <param name="mu#">a number indicating the True value Of the mean (Or difference In means If you are performing a two sample test).</param>
+ <param name="alpha#"></param>
+ <param name="alternative">specifying the alternative hypothesis</param>
+ <remarks>``ttest({0,1,1,1}, mu:= 1).valid() = True``</remarks>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.t.Test(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double},Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.Hypothesis,System.Double,System.Double,System.Boolean)">
+ <summary>
+ Performs two sample t-tests on vectors of data.
+ </summary>
+ <param name="a">a (non-empty) numeric vector of data values.</param>
+ <param name="b">a (non-empty) numeric vector of data values.</param>
+ <param name="mu#">a number indicating the True value Of the mean (Or difference In means If you are performing a two sample test).</param>
+ <param name="alpha#"></param>
+ <param name="alternative">specifying the alternative hypothesis</param>
+ <param name="varEqual">Default using **student's t-test**, set this parameter to False using **Welch's t-test**</param>
+ <returns></returns>
+ <remarks>
+ ``ttest({0,1,1,1}, {1,2,2,2}, mu:= -1).valid() = True``
+ </remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.t.Pvalue(System.Double,System.Double,Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.Hypothesis)">
+ <summary>
+ 
+ </summary>
+ <param name="t#">The t test value</param>
+ <param name="v">v is the degrees of freedom</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.t.Tcdf(System.Double,System.Double)">
+ <summary>
+ ###### Student's t-distribution CDF
+ 
+ https://en.wikipedia.org/wiki/Student%27s_t-distribution#Non-standardized_Student.27s_t-distribution
+ </summary>
+ <param name="t">Only works for ``t > 0``</param>
+ <param name="v">v is the degrees of freedom</param>
+ <returns></returns>
+ <remarks>
+ ###### 2017-1-11 test success!
+ 
+ ```
+ tcdf(1,1) = 0.75
+ tcdf(0,5) = 0.5
+ ```
+ </remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Hypothesis.t.Tcdf(Microsoft.VisualBasic.Mathematical.LinearAlgebra.Vector,System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="t"></param>
+ <param name="v#"></param>
+ <returns></returns>
+ <remarks>
+ ```
+ Tcdf({0, 2, 4}, 5) = {0.5, 0.949, 0.995}
+ ```
+ </remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetInvCDF(System.Double)">
+ <summary>
+ This function produces a value for a given probability, this value will represent the Non-Exceedance value for that probability. </summary>
+ <param name="probability"> a number between 0 and 1. </param>
+ <returns> a value distributed by the distribution defined in the concrete implementation of this abstract class. </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetCDF(System.Double)">
+ <summary>
+ This function is the Cumulative Distribution Function. It returns a Non Exceedance probability for any value.  It will be implemented by all concrete implementations of this abstract class. </summary>
+ <param name="value"> the value that a probability will be produced for. </param>
+ <returns> a probability that this value will be exceeded by any other value from the sample set. </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetPDF(System.Double)">
+ <summary>
+ This is the Probability Density Function. It describes the likelihood any given value will occur within a dataset. </summary>
+ <param name="value"> the value that a likelihood will be returned for. </param>
+ <returns> the likelihood (defined by the concrete distribution) the specified value will occur in any given sample dataset (assuming the value is from the underlying distribution). </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetInvCDF(Microsoft.VisualBasic.Mathematical.LinearAlgebra.Vector)">
+ <summary>
+ This function produces a value for a given probability, this value will represent the Non-Exceedance value for that probability. </summary>
+ <param name="probability"> a number between 0 and 1. </param>
+ <returns> a value distributed by the distribution defined in the concrete implementation of this abstract class. </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetCDF(Microsoft.VisualBasic.Mathematical.LinearAlgebra.Vector)">
+ <summary>
+ This function is the Cumulative Distribution Function. It returns a Non Exceedance probability for any value.  It will be implemented by all concrete implementations of this abstract class. </summary>
+ <param name="value"> the value that a probability will be produced for. </param>
+ <returns> a probability that this value will be exceeded by any other value from the sample set. </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetPDF(Microsoft.VisualBasic.Mathematical.LinearAlgebra.Vector)">
+ <summary>
+ This is the Probability Density Function. It describes the likelihood any given value will occur within a dataset. </summary>
+ <param name="value"> the value that a likelihood will be returned for. </param>
+ <returns> the likelihood (defined by the concrete distribution) the specified value will occur in any given sample dataset (assuming the value is from the underlying distribution). </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetParamNames">
+ <summary>
+ This function will return string representations of the parameter names for each distribution. </summary>
+ <returns> a String array of all of the declared fields composing the concrete implementation of this ContinuousDistribution </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.GetParamValues">
+ <summary>
+ This function determines the current values for each parameter in this concrete implementation of the ContinuousDistribution </summary>
+ <returns> an array of object for each parameter in this class. </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistribution.Clone">
+ <summary>
+ Creates a clone of the current ContinuousDistribution. </summary>
+ <returns> A ContinuousDistribution of the same type as the one this function is called on. </returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.ContinuousDistributionError">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.LinearMoments.Exponential">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.LinearMoments.GEV">
+ 
+ <summary>
+ @author Will_and_Sara and Micheal Wright
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.LinearMoments.Gumbel">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.LinearMoments.Logistic">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.LinearMoments.LogPearsonIII">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.LinearMoments.Pareto">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Beta">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Emperical">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Exponential">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Gamma">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.GEV">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Gumbel">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.LogNormal">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.LogNormal.#ctor(System.Double[])">
+ <summary>
+ This takes an input array of sample data, calculates the log base 10 of the data, then calculates the mean and standard deviation of the log data. </summary>
+ <param name="data"> the sampled data (in linear space) </param>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.LogPearsonIII">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Normal">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Normal.#ctor">
+ <summary>
+ Creates a standard normal distribution
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Normal.#ctor(System.Double,System.Double)">
+ <summary>
+ Creates a normal distribution based on the user defined mean and standard deviation </summary>
+ <param name="m"> the mean of the distribution </param>
+ <param name="sd"> the standard deviation of the distribution </param>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Normal.#ctor(System.Double[])">
+ <summary>
+ Creates a normal distribution based on input data using the standard method of moments. </summary>
+ <param name="data"> an array of double data. </param>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Rayleigh">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Triangular">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.Distributions.MethodOfMoments.Uniform">
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.IsConverged">
+ <summary>
+ This function can be used to determine if enough samples have been added to determine convergence of the data stream. </summary>
+ <returns> this function will return false until the minimum number of observations have been added, and then will return the result of the convergence test after the most recent observation. </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.SetMinValuesBeforeConvergenceTest(System.Int32)">
+ <summary>
+ This method allows the user to define a minimum number of observations before testing for convergence.
+ This would help to mitigate early convergence if similar observations are in close sequence early in the dataset. </summary>
+ <param name="numobservations"> the minimum number of observations to wait until testing for convergence. </param>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.SetConvergenceTolerance(System.Double)">
+ <summary>
+ This method sets the tolerance for convergence.  This tolerance is used as an epsilon neighborhood around the confidence defined in SetZalphaForConvergence. </summary>
+ <param name="tolerance"> the distance that is determined to be close enough to the alpha in question. </param>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.SetZAlphaForConvergence(System.Double)">
+ <summary>
+ This method defines the alpha value used to determine convergence.  This value is based on a two sided confidence interval.  It uses the upper Confidence Limit. </summary>
+ <param name="ConfidenceInterval"> The value that would be used to determine the normal alpha value.  The default is a .9 Confidence interval, which corresponds to 1.96 alpha value. </param>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.#ctor">
+ <summary>
+ This constructor allows one to create an instance without adding any data.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.#ctor(System.Collections.Generic.IEnumerable{System.Double})">
+ <summary>
+ This constructor allows one to create an instance with some initial data, observations can be added after the constructor through the "AddObservations(double observation) call. </summary>
+ <param name="data"> the dataset to calculate mean and standard deviation for. </param>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMoments.AddObservation(System.Double)">
+ <summary>
+ An inline algorithm for incrementing mean and standard of deviation. After this method call, the properties of this class should be updated to include this observation. </summary>
+ <param name="observation"> the observation to be added </param>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.BasicProductMomentsHistogram">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.LinearMoments">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.MomentFunctions.ProductMoments">
+ 
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions">
+ <summary>
+ @author Will_and_Sara
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.Factorial(System.Int32)">
+ <summary>
+ could be improved with unsigned integers or the gamma function
+ </summary>
+ <param name="N"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.Factorial(System.Int32,System.Int32)">
+ <summary>
+ could be improved with unsigned integers or the gamma function
+ </summary>
+ <param name="N"></param>
+ <param name="k"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.MutualProbability(System.Double[])">
+ <summary>
+ http://lethalman.blogspot.com/2011/08/probability-of-union-of-independent.html
+ </summary>
+ <param name="probabilities"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.RegularizedIncompleteBetaFunction(System.Double,System.Double,System.Double)">
+ <summary>
+ ######  The regularized incomplete beta function
+ https://en.wikipedia.org/wiki/Beta_function#Incomplete_beta_function
+ </summary>
+ <param name="aa"></param>
+ <param name="bb"></param>
+ <param name="xx"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.incbcf(System.Double,System.Double,System.Double)">
+ <summary>
+ Continued fraction expansion #1
+ * for incomplete beta integral
+ </summary>
+ <param name="a"></param>
+ <param name="b"></param>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.incbd(System.Double,System.Double,System.Double)">
+ <summary>
+ Continued fraction expansion #2
+ * for incomplete beta integral
+ </summary>
+ <param name="a"></param>
+ <param name="b"></param>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.pseries(System.Double,System.Double,System.Double)">
+ <summary>
+ Power series for incomplete beta integral.
+ Use when b*x is small and x not too close to 1.  
+ </summary>
+ <param name="a"></param>
+ <param name="b"></param>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.StirlingsFormula(System.Double)">
+ <summary>
+ https://www.ncnr.nist.gov/resources/sansmodels/SpecialFunction.java //previous name was stirf
+ </summary>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.EvaluatePolynomial(System.Double,System.Double[])">
+ <summary>
+ https://www.ncnr.nist.gov/resources/sansmodels/SpecialFunction.java //previous name was polevl
+ </summary>
+ <param name="x"></param>
+ <param name="coefficients"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.IncompleteGammaComplement(System.Double,System.Double)">
+ <summary>
+ https://www.ncnr.nist.gov/resources/sansmodels/SpecialFunction.java //previous name was igamc
+ </summary>
+ <param name="a"></param>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.IncompleteGamma(System.Double,System.Double)">
+ <summary>
+ https://www.ncnr.nist.gov/resources/sansmodels/SpecialFunction.java //previous name was igam
+ </summary>
+ <param name="a"></param>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.gammaln(System.Double)">
+ <summary>
+ testing showed Ben's code and this code were roughly equivalent (also to excel) however, Ben's code executed faster in the time trials.
+ </summary>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Mathematical.Statistics.SpecialFunctions.gamma(System.Double)">
+ <summary>
+ testing showed Ben's code and this code were roughly equivalent (also to excel) however, Ben's code executed faster in the time trials.
+ https://www.ncnr.nist.gov/resources/sansmodels/SpecialFunction.java
+ </summary>
+ <param name="x"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

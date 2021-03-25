@@ -1,0 +1,48 @@
+﻿<Window x:Class="EditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:personal_dashboard_vb"
+        mc:Ignorable="d"
+        Title="Markdown编辑器" Height="700" Width="1200" Loaded="Window_Loaded"
+        
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="15"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <materialDesign:Card  Grid.Row="0" Height="50" Background="Indigo">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width='2*' />
+                    <ColumnDefinition Width='*'/>
+                    <ColumnDefinition Width='*'/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"  Name="TitleTextBlock">file title</TextBlock>
+                <Button HorizontalAlignment="Center" Grid.Column="2" Click="Button_Click">保存</Button>
+            </Grid>
+        </materialDesign:Card>
+        <Grid  Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width='40' />
+                <ColumnDefinition Width='*' />
+                <ColumnDefinition Width='*'/>
+            </Grid.ColumnDefinitions>
+            <ListBox Name="lineNumbers" Background="#282C34"  Foreground="#444B5A" Width="40" Padding="4">
+            </ListBox>
+            <TextBox  VerticalContentAlignment="Top" MinHeight="1000" Grid.Column="1" Grid.Row="1" TextChanged="TextBox_TextChanged" FontSize="16.4" Name="InputTextBox"  AcceptsReturn="True" Background="#282C34" Foreground="#F8F8F2" CaretBrush="#F8F8F2"/>
+            <WebBrowser Name="TranslatedTextBox" Grid.Column="2" Height="auto"/>
+        </Grid>
+    </Grid>
+</Window>

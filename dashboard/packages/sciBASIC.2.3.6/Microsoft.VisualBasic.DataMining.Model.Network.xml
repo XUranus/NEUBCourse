@@ -1,0 +1,129 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.DataMining.Model.Network
+</name>
+</assembly>
+<members>
+<member name="T:Microsoft.VisualBasic.DataMining.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.NodeTrees.BuildTree(Microsoft.VisualBasic.Data.visualize.Network.FileStream.Network)">
+ <summary>
+ 
+ </summary>
+ <param name="net">使用边对象的数据来构建整颗树</param>
+ <returns></returns>
+ <remarks>请注意：在这里面边是具有方向的，from到to</remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.NodeTrees.CutTrees(Microsoft.VisualBasic.DataMining.KMeans.EntityNode,System.Double)">
+ <summary>
+ 在进行分区的时候，分支最少的路径会被切割下来，分支多的路径会继续访问直到没有path路径为止
+ </summary>
+ <param name="tree"></param>
+ <param name="min">分区集合之中的最小节点数，为quantile百分比值</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.TreeClustering.TreeCluster(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.KMeans.EntityLDM},System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ 二叉树树形聚类，请注意，所输入的数据的名字不可以一样，不然无法正确生成cluster标记
+ </summary>
+ <param name="resultSet"></param>
+ <param name="stop">Max iteration number for the kmeans kernel</param>
+ <returns></returns>
+ <param name="parallelDepth">-1表示不会限制并行的深度</param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.TreeClustering.TreeCluster(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.KMeans.Entity},System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ 二叉树聚类的路径会在<see cref="P:Microsoft.VisualBasic.DataMining.KMeans.Entity.uid"/>上面出现
+ </summary>
+ <param name="source">函数会在这里自动调用ToArray方法结束Linq查询</param>
+ <param name="parallel"></param>
+ <param name="stop">Max iteration number for the kmeans kernel</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.TreeClustering.TreeCluster``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="source"></param>
+ <param name="parallel"></param>
+ <param name="[stop]"></param>
+ <param name="parallelDepth%">-1表示不会限制，但是0表示只会是第一层为并行计算模式</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.TreeClustering.__firstCluster``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 两条线程并行化进行二叉树聚类
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="source"></param>
+ <param name="[stop]"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.KMeansNetwork.ToNetwork(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.KMeans.EntityLDM},System.Collections.Generic.Dictionary{System.String,System.Drawing.Color},System.String,System.Func{System.Double,System.Boolean})">
+ <summary>
+ 相似度矩阵之中大于0的值会被作为边的强度，小于或者等于0表示没有边
+ </summary>
+ <param name="kmeans"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.KMeans.Tree">
+ <summary>
+ KMeans.Tree.NET
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Tree.Partitioning(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.KMeans.EntityLDM},System.Int32,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="cluster"></param>
+ <param name="depth">将会以最短的聚类作为数据分区的深度</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Tree.bTreeNET(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.DataMining.KMeans.EntityLDM},System.Boolean)">
+ <summary>
+ Create network model for visualize the binary tree clustering result.(将树形聚类的结果转换为网络文件)
+ </summary>
+ <param name="source"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.KMeans.Tree.__buildNET(Microsoft.VisualBasic.DataMining.KMeans.Tree.__edgePath[],Microsoft.VisualBasic.Data.visualize.Network.FileStream.Node,System.Int32,Microsoft.VisualBasic.Language.List{Microsoft.VisualBasic.Data.visualize.Network.FileStream.Node}@)">
+ <summary>
+ 从某一个分支点下来
+ </summary>
+ <param name="array"></param>
+ <param name="depth"></param>
+ <param name="nodes"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.Extensions.ClusterResultFastLoad(System.String)">
+ <summary>
+ 假若有很多个节点的话，则进行聚类会得到很多的属性，但是想要加载的数据
+ 只有ID和cluster结果等非附加属性部分，则这个时候可以使用这个函数进行快速加载
+ </summary>
+ <param name="path$"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.NeuralNetwork.Models.NetworkModelAPI">
+ <summary>
+ 网络可视化工具
+ </summary>
+</member>
+</members>
+</doc>

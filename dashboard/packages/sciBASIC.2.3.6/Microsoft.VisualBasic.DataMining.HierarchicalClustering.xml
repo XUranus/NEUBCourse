@@ -1,0 +1,104 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.DataMining.HierarchicalClustering
+</name>
+</assembly>
+<members>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Cluster.CountLeafs">
+ <summary>
+ 计算出所有的叶节点的总数，包括自己的child的叶节点
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Cluster.CountLeafs(Microsoft.VisualBasic.DataMining.HierarchicalClustering.Cluster,System.Int32)">
+ <summary>
+ 对某一个节点的所有的叶节点进行计数
+ </summary>
+ <param name="node"></param>
+ <param name="count"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Hierarchy.HierarchyTreeNode.Reverse">
+ <returns> 
+ a new ClusterPair with the two left/right inverted
+ </returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Hierarchy.DistanceMap">
+ <summary>
+ Container for linkages
+ with the minimal methods needed in the package
+ Created by Alexandre Masselot on 7/18/14.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Hierarchy.DistanceMap.minDist">
+ <summary>
+ Peak into the minimum distance
+ @return
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Hierarchy.DistanceMap.hashCodePair(Microsoft.VisualBasic.DataMining.HierarchicalClustering.Hierarchy.HierarchyTreeNode)">
+ <summary>
+ Compute some kind of unique ID for a given cluster pair. </summary>
+ <returns> The ID </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Hierarchy.HierarchyBuilder.flatAgg(Microsoft.VisualBasic.DataMining.HierarchicalClustering.LinkageStrategy,System.Double)">
+ <summary>
+ Returns Flattened clusters, i.e. clusters that are at least apart by a given threshold </summary>
+ <param name="linkageStrategy"> </param>
+ <param name="threshold">
+ @return </param>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.DendrogramVisualize.ClusterComponent.paint(Microsoft.VisualBasic.Imaging.Graphics2D,System.Int32,System.Int32,System.Double,System.Double,System.Boolean,System.Single,System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+ 绘制具体的聚类结果
+ </summary>
+ <param name="g"></param>
+ <param name="xDisplayOffset"></param>
+ <param name="yDisplayOffset"></param>
+ <param name="xDisplayFactor"></param>
+ <param name="yDisplayFactor"></param>
+ <param name="decorated"></param>
+</member>
+<member name="F:Microsoft.VisualBasic.DataMining.HierarchicalClustering.DendrogramVisualize.DendrogramPanel.component">
+ <summary>
+ Root node
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.DataMining.HierarchicalClustering.DendrogramVisualize.DendrogramPanel.ClassTable">
+ <summary>
+ ``<see cref="P:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Cluster.Name"/> --> Class Color``
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.DendrogramVisualize.DendrogramPanel.createComponent(Microsoft.VisualBasic.DataMining.HierarchicalClustering.Cluster,System.Drawing.PointF,System.Double)">
+ <summary>
+ 对整棵树进行递归生成layout信息
+ </summary>
+ <param name="cluster"></param>
+ <param name="pt0"></param>
+ <param name="clusterHeight"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.DataMining.HierarchicalClustering.DendrogramVisualize.Paintable">
+ <summary>
+ Implemented by visual components of the dendrogram.
+ @author lars
+ 
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.DataMining.HierarchicalClustering.DendrogramVisualize.Paintable.paint(Microsoft.VisualBasic.Imaging.Graphics2D,System.Int32,System.Int32,System.Double,System.Double,System.Boolean,System.Single,System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+ 
+ </summary>
+ <param name="g"></param>
+ <param name="xDisplayOffset%"></param>
+ <param name="yDisplayOffset%"></param>
+ <param name="xDisplayFactor#"></param>
+ <param name="yDisplayFactor#"></param>
+ <param name="decorated"></param>
+ <param name="classTable">``<see cref="P:Microsoft.VisualBasic.DataMining.HierarchicalClustering.Cluster.Name"/> --> Color``</param>
+</member>
+</members>
+</doc>

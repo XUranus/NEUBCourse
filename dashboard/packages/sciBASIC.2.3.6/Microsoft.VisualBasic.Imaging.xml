@@ -1,0 +1,1601 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Microsoft.VisualBasic.Imaging
+</name>
+</assembly>
+<members>
+<member name="T:Microsoft.VisualBasic.Imaging.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.colorbrewer">
+<summary>
+  Looks up a localized string similar to {  
+  &quot;Spectral&quot;: {
+    &quot;3&quot;: [ &quot;rgb(252,141,89)&quot;, &quot;rgb(255,255,191)&quot;, &quot;rgb(153,213,148)&quot; ],
+    &quot;4&quot;: [ &quot;rgb(215,25,28)&quot;, &quot;rgb(253,174,97)&quot;, &quot;rgb(171,221,164)&quot;, &quot;rgb(43,131,186)&quot; ],
+    &quot;5&quot;: [ &quot;rgb(215,25,28)&quot;, &quot;rgb(253,174,97)&quot;, &quot;rgb(255,255,191)&quot;, &quot;rgb(171,221,164)&quot;, &quot;rgb(43,131,186)&quot; ],
+    &quot;6&quot;: [ &quot;rgb(213,62,79)&quot;, &quot;rgb(252,141,89)&quot;, &quot;rgb(254,224,139)&quot;, &quot;rgb(230,245,152)&quot;, &quot;rgb(153,213,148)&quot;, &quot;rgb(50,136,189)&quot; ],
+    &quot;7&quot;: [ &quot;rgb(213,62,79)&quot;, &quot;rgb(252,141,89)&quot;, &quot;rgb(254,224,139)&quot;, &quot;rgb(255,255,191)&quot;, [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Aspect">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Aspect&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;323232&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;E3DED1&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;F07F09&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;9F2936&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;1B587C&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:sr [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Blue">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Blue&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;17406D&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;DBEFF9&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;0F6FC6&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;009DD9&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;0BD0D9&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srgb [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Blue2">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Blue2&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;335B74&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;DFE3E5&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;1CADE4&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;2683C6&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;27CED7&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srg [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_BlueGreen">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_BlueGreen&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;373545&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;CEDBE6&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;3494BA&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;58B6C0&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;75BDA7&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_BlueWarm">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_BlueWarm&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;242852&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;ACCBF9&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;4A66AC&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;629DD1&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;297FD5&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a: [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_GrayScale">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_GrayScale&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;000000&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;F8F8F8&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;DDDDDD&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;B2B2B2&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;969696&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Green">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Green&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;455F51&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;E3DED1&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;549E39&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;8AB833&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;C0CF3A&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srg [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_GreenYellow">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_GreenYellow&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;455F51&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;E2DFCC&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;99CB38&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;63A537&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;37A76F&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Marquee">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Marquee&quot;&gt;&lt;a:dk1&gt;&lt;a:srgbClr val=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;5E5E5E&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;DDDDDD&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;418AB3&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;A6B727&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;F69200&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srgbClr val=&quot;838383&quot;/ [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Median">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Median&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;775F55&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;EBDDC3&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;94B6D2&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;DD8047&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;A5AB81&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:sr [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Office">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Office&quot;&gt;
+  &lt;a:dk1&gt;
+    &lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;
+  &lt;/a:dk1&gt;
+  &lt;a:lt1&gt;
+    &lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;
+  &lt;/a:lt1&gt;
+  &lt;a:dk2&gt;
+    &lt;a:srgbClr val=&quot;44546A&quot;/&gt;
+  &lt;/a:dk2&gt;
+  &lt;a:lt2&gt;
+    &lt;a:srgbClr val=&quot;E7E6E6&quot;/&gt;
+  &lt;/a:lt2&gt;
+  &lt;a:accent1&gt;
+    &lt;a:srgbClr val=&quot;5B9BD5&quot;/&gt;
+  &lt;/a:accent1&gt;
+  &lt;a:accent2&gt;
+    &lt;a:srgbClr val=&quot;ED7D3 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Office2007_2010">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Office2007-2010&quot;&gt;
+  &lt;a:dk1&gt;
+    &lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;
+  &lt;/a:dk1&gt;
+  &lt;a:lt1&gt;
+    &lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;
+  &lt;/a:lt1&gt;
+  &lt;a:dk2&gt;
+    &lt;a:srgbClr val=&quot;1F497D&quot;/&gt;
+  &lt;/a:dk2&gt;
+  &lt;a:lt2&gt;
+    &lt;a:srgbClr val=&quot;EEECE1&quot;/&gt;
+  &lt;/a:lt2&gt;
+  &lt;a:accent1&gt;
+    &lt;a:srgbClr val=&quot;4F81BD&quot;/&gt;
+  &lt;/a:accent1&gt;
+  &lt;a:accent2&gt;
+    &lt;a:srgbClr v [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Orange">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Orange&quot;&gt;&lt;a:dk1&gt;&lt;a:srgbClr val=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;637052&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;CCDDEA&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;E48312&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;BD582C&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;865640&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srgbClr val=&quot;9B8357&quot;/&gt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_OrangeRed">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_OrangeRed&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;696464&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;E9E5DC&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;D34817&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;9B2D1F&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;A28E6A&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Paper">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Paper&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;444D26&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;FEFAC9&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;A5B592&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;F3A447&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;E7BC29&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srg [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Red">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Red&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;323232&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;E5C243&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;A5300F&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;D55816&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;E19825&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:srgbC [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_RedOrange">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_RedOrange&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;505046&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;EEECE1&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;E84C22&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;FFBD47&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;B64926&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_RedViolet">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_RedViolet&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;454551&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;D8D9DC&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;E32D91&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;C830CC&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;4EA6DC&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Slipstream">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Slipstream&quot;&gt;
+  &lt;a:dk1&gt;
+    &lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;
+  &lt;/a:dk1&gt;
+  &lt;a:lt1&gt;
+    &lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;
+  &lt;/a:lt1&gt;
+  &lt;a:dk2&gt;
+    &lt;a:srgbClr val=&quot;212745&quot;/&gt;
+  &lt;/a:dk2&gt;
+  &lt;a:lt2&gt;
+    &lt;a:srgbClr val=&quot;B4DCFA&quot;/&gt;
+  &lt;/a:lt2&gt;
+  &lt;a:accent1&gt;
+    &lt;a:srgbClr val=&quot;4E67C8&quot;/&gt;
+  &lt;/a:accent1&gt;
+  &lt;a:accent2&gt;
+    &lt;a:srgbClr val=&quot;5 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Violet">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Violet&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;373545&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;DCD8DC&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;AD84C6&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;8784C7&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;5D739A&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:sr [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Violet2">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Violet2&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;632E62&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;EAE5EB&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;92278F&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;9B57D3&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;755DD9&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:s [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_Yellow">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_Yellow&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;39302A&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;E5DEDB&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;FFCA08&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;F8931D&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;CE8D3E&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4&gt;&lt;a:sr [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.Default_YellowOrange">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;a:clrScheme xmlns:a=&quot;http://schemas.openxmlformats.org/drawingml/2006/main&quot; name=&quot;Default_YellowOrange&quot;&gt;&lt;a:dk1&gt;&lt;a:sysClr val=&quot;windowText&quot; lastClr=&quot;000000&quot;/&gt;&lt;/a:dk1&gt;&lt;a:lt1&gt;&lt;a:sysClr val=&quot;window&quot; lastClr=&quot;FFFFFF&quot;/&gt;&lt;/a:lt1&gt;&lt;a:dk2&gt;&lt;a:srgbClr val=&quot;4E3B30&quot;/&gt;&lt;/a:dk2&gt;&lt;a:lt2&gt;&lt;a:srgbClr val=&quot;FBEEC9&quot;/&gt;&lt;/a:lt2&gt;&lt;a:accent1&gt;&lt;a:srgbClr val=&quot;F0A22E&quot;/&gt;&lt;/a:accent1&gt;&lt;a:accent2&gt;&lt;a:srgbClr val=&quot;A5644E&quot;/&gt;&lt;/a:accent2&gt;&lt;a:accent3&gt;&lt;a:srgbClr val=&quot;B58B80&quot;/&gt;&lt;/a:accent3&gt;&lt;a:accent4 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.DefaultTexture">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.My.Resources.Resources.designer_colors">
+<summary>
+  Looks up a localized string similar to {  
+  &quot;DarkSeaGreen&quot;: [ &quot;LightYellow&quot;, &quot;Snow&quot;, &quot;Khaki&quot;, &quot;White&quot;, &quot;LightBlue&quot;, &quot;LemonChiffon&quot;, &quot;Wheat&quot;, &quot;Aqua&quot;, &quot;MintCream&quot;, &quot;PowderBlue&quot;, &quot;WhiteSmoke&quot;, &quot;Aquamarine&quot;, &quot;Moccasin&quot;, &quot;LightGrey&quot;, &quot;Turquoise&quot;, &quot;PaleGoldenrod&quot;, &quot;Azure&quot;, &quot;LightCyan&quot;, &quot;Silver&quot;, &quot;PapayaWhip&quot;, &quot;Ivory&quot;, &quot;OldLace&quot;, &quot;MediumAquamarine&quot;, &quot;MediumSpringGreen&quot;, &quot;Linen&quot;, &quot;SkyBlue&quot;, &quot;BlanchedAlmond&quot;, &quot;Cornsilk&quot;, &quot;PeachPuff&quot;, &quot;PaleGreen&quot;, &quot;MediumTurquoise&quot;, &quot;Cyan&quot;, &quot;Honeydew&quot;, &quot;DarkTurquoise&quot;, &quot;MistyRose&quot;, &quot;LightSkyBlue&quot;, &quot;DarkSeaGreen&quot;, &quot;Pink&quot; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.d3js.SVG.CSS.DirectedForceGraph">
+ <summary>
+ Style generator for the value of <see cref="P:Microsoft.VisualBasic.MIME.Markup.HTML.XmlMeta.CSS.style"/>
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.ColorPalette.__colorsPaletteModels">
+ <summary>
+ 大小或者选择了新颜色之后需要重新生成模型
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.ColorPalette.OnPaint(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ 大小改变了之后或者选择了新的颜色之后在这里进行界面重绘
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.ColorRange.GetMinDistance(System.Drawing.Color)">
+ <summary>
+ 返回和最近的一个颜色点的距离值
+ </summary>
+ <param name="color"></param>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.OfficeColorThemes.Themes">
+ <summary>
+ All office color themes
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.OfficeColorThemes.GetAccentColors(System.String)">
+ <summary>
+ If found failure, default is reutrns the theme <see cref="P:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.OfficeColorThemes.Office2016"/>
+ </summary>
+ <param name="theme$"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Theme.srgbClr">
+ <summary>
+ 颜色值
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Theme.srgbClr.val">
+ <summary>
+ 颜色值
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.ColorBrewer.ParseName(System.String)">
+ <summary>
+ example: ``Accent:c6``
+ </summary>
+ <param name="term$"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer">
+ <summary>
+ Generate color sequence
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.AvailableInterpolates">
+<summary>
+ {  
+  &quot;Color [PapayaWhip]&quot;: [
+    {
+      &quot;knownColor&quot;: 93,
+      &quot;name&quot;: null,
+      &quot;state&quot;: 1,
+      &quot;value&quot;: 0
+    },
+    {
+      &quot;knownColor&quot;: 119,
+      &quot;name&quot;: null,
+      &quot;state&quot;: 1,
+      &quot;value&quot;: 0
+    },
+    {
+      &quot;knownColor&quot;: 30,
+      &quot;name&quot;: null,
+      &quot;state&quot;: 1,
+      &quot;value&quot;: 0
+    },
+    {
+      &quot;knownColor&quot;: 165,
+      &quot;name&quot;: null,
+      &quot;state&quot;: 1,
+      &quot;value&quot;: 0
+    },
+    {
+      &quot;knownColor&quot;: 81,
+      &quot;name&quot;: null,
+      &quot;state&quot;: 1,
+      &quot;value&quot;: [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.TSF">
+ <summary>
+ From TSF launcher on Android
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.GetColors(System.String)">
+ <summary>
+ 对于无效的键名称，默认是返回<see cref="P:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.OfficeColorThemes.Office2016"/>，请注意，如果是所有的.net的颜色的话，这里面还会包含有白色，所以还需要手工去除掉白色
+ </summary>
+ <param name="term$">假若这里所输入的是一组颜色值，则必须是htmlcolor或者颜色名称，RGB表达式将不会被允许</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.GetColors(System.String,System.Int32,System.Int32)">
+ <summary>
+ 这个函数是获取得到一个连续的颜色谱
+ </summary>
+ <param name="term$"></param>
+ <param name="n%"></param>
+ <param name="alpha%"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.GetBrushes(System.String,System.Int32,System.Int32)">
+ <summary>
+ ``New <see cref="T:System.Drawing.SolidBrush"/>(<see cref="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.GetColors(System.String,System.Int32,System.Int32)"/>)``
+ </summary>
+ <param name="term$"></param>
+ <param name="n%"></param>
+ <param name="alpha%"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.FromNames(System.String[],System.Int32)">
+ <summary>
+ 相对于<see cref="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.GetColors(System.String)"/>函数而言，这个函数是返回非连续的颜色谱，假若数量不足，会重新使用开头的起始颜色连续填充
+ </summary>
+ <param name="colors$"></param>
+ <param name="n%"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.FromSchema(System.String,System.Int32)">
+ <summary>
+ <see cref="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.FromSchema(System.String,System.Int32)"/>和<see cref="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.FromNames(System.String[],System.Int32)"/>适用于函数绘图之类需要区分数据系列的颜色谱的生成
+ </summary>
+ <param name="term$"></param>
+ <param name="n%"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.Colors(System.Drawing.Color[],System.Int32,System.Int32)">
+ <summary>
+ **<see cref="M:Microsoft.VisualBasic.Imaging.ColorCube.GetColorSequence(System.Drawing.Color,System.Drawing.Color,System.Int32,System.Int32)"/>**
+ 
+ Some useful color tables for images and tools to handle them.
+ Several color scales useful for image plots: a pleasing rainbow style color table patterned after 
+ that used in Matlab by Tim Hoar and also some simple color interpolation schemes between two or 
+ more colors. There is also a function that converts between colors and a real valued vector.
+ </summary>
+ <param name="col">A list of colors (names or hex values) to interpolate</param>
+ <param name="n%">Number of color levels. The setting n=64 is the orignal definition.</param>
+ <param name="alpha%">
+ The transparency of the color – 255 is opaque and 0 is transparent. This is useful for 
+ overlays of color and still being able to view the graphics that is covered.
+ </param>
+ <returns>
+ A vector giving the colors in a hexadecimal format, two extra hex digits are added for the alpha channel.
+ </returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Designer.CubicSpline(System.Collections.Generic.IEnumerable{System.Drawing.Color},System.Int32,System.Int32)">
+ <summary>
+ 这个函数并不会计算alpha的值
+ </summary>
+ <param name="colors"></param>
+ <param name="n">所期望的颜色的数量</param>
+ <returns></returns>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Legends.ColorMapLegend(System.Drawing.Color[],System.String,System.String,System.String,System.String,System.Boolean,System.Drawing.Size,System.String,System.Drawing.Font,System.Single)">
+ <summary>
+ Draw color legend for the color sequnece
+ </summary>
+ <param name="designer"></param>
+ <param name="title$">The legend title</param>
+ <param name="min$"></param>
+ <param name="max$"></param>
+ <param name="bg$"></param>
+ <param name="haveUnmapped"></param>
+ <param name="lsize"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Colors.Legends.ColorMapLegend(System.Drawing.SolidBrush[],System.String,System.String,System.String,System.String,System.Boolean,System.Drawing.Size,System.String,System.Drawing.Font,System.Single)">
+ <summary>
+ 输出的图例的大小默认为：``{800, 1000}``
+ </summary>
+ <param name="designer"></param>
+ <param name="title$"></param>
+ <param name="min$"></param>
+ <param name="max$"></param>
+ <param name="bg$"></param>
+ <param name="haveUnmapped"></param>
+ <param name="lsize"></param>
+ <param name="titleFont"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.IPlot">
+ <summary>
+ 
+ </summary>
+ <param name="g">GDI+设备</param>
+ <param name="grct">绘图区域的大小</param>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.g">
+ <summary>
+ Data plots graphics engine common abstract.
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing2D.g.DefaultPadding">
+ <summary>
+ 默认的页边距大小都是100个像素
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing2D.g.DefaultLargerPadding">
+ <summary>
+ 与<see cref="F:Microsoft.VisualBasic.Imaging.Drawing2D.g.DefaultPadding"/>相比而言，这个padding的值在坐标轴Axis的label的绘制上空间更加大
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing2D.g.ZeroPadding">
+ <summary>
+ 所有的页边距都是零
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.g.#cctor">
+ <summary>
+ 在这个模块的构造函数之中，程序会自动根据命令行所设置的环境参数来设置默认的图形引擎
+ 
+ ```
+ /@set graphic_driver=svg|gdi
+ ```
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing2D.g.__defaultDriver">
+ <summary>
+ 用户所指定的图形引擎驱动程序类型，但是这个值会被开发人员设定的驱动程序类型的值所覆盖，
+ 通常情况下，默认引擎选用的是``gdi+``引擎
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.g.__getDriver(Microsoft.VisualBasic.Imaging.Driver.Drivers)">
+ <summary>
+ 这个函数不会返回<see cref="F:Microsoft.VisualBasic.Imaging.Driver.Drivers.Default"/>
+ </summary>
+ <param name="developerValue">程序开发人员所设计的驱动程序的值</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.g.GraphicsPlots(System.Drawing.Size@,Microsoft.VisualBasic.MIME.Markup.HTML.CSS.Padding@,System.String,Microsoft.VisualBasic.Imaging.Drawing2D.IPlot,Microsoft.VisualBasic.Imaging.Driver.Drivers)">
+ <summary>
+ Data plots graphics engine. Default: <paramref name="size"/>:=(4300, 2000), <paramref name="padding"/>:=(100,100,100,100).
+ (用户可以通过命令行设置环境变量``graphic_driver``来切换图形引擎)
+ </summary>
+ <param name="size"></param>
+ <param name="padding">页边距</param>
+ <param name="bg">颜色值或者图片资源文件的url或者文件路径</param>
+ <param name="plotAPI"></param>
+ <param name="driver">驱动程序是默认与当前的环境参数设置相关的</param>
+ <returns></returns>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.g.FillBg(System.Drawing.Graphics@,System.String,System.Drawing.Rectangle)">
+ <summary>
+ 自动根据表达式的类型来进行纯色绘制或者图形纹理画刷绘制
+ </summary>
+ <param name="g"></param>
+ <param name="bg$">
+ 1. 可能为颜色表达式
+ 2. 可能为图片的路径
+ 3. 可能为base64图片字符串
+ </param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.g.GraphicsPlots(System.Action{Microsoft.VisualBasic.Imaging.IGraphics},System.Drawing.Size@,Microsoft.VisualBasic.MIME.Markup.HTML.CSS.Padding@,System.String)">
+ <summary>
+ Data plots graphics engine.
+ </summary>
+ <param name="size"></param>
+ <param name="bg"></param>
+ <param name="plot"></param>
+ <returns></returns>
+ 
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.g.InternalCanvas">
+ <summary>
+ 可以借助这个画布对象创建多图层的绘图操作
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.g.InternalCanvas.op_LessThanOrEqual(Microsoft.VisualBasic.Imaging.Drawing2D.g.InternalCanvas,Microsoft.VisualBasic.Imaging.Drawing2D.IPlot)">
+ <summary>
+ canvas invoke this plot.
+ </summary>
+ <param name="g"></param>
+ <param name="plot"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.GraphicsRegion">
+ <summary>
+ 绘图区域的参数
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing2D.GraphicsRegion.Size">
+ <summary>
+ 整张画布的大小
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing2D.GraphicsRegion.Padding">
+ <summary>
+ 画布的边留白
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.GraphicsRegion.PlotRegion">
+ <summary>
+ 整张画布出去margin部分剩余的可供绘图的区域
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.GraphicsRegion.EntireArea">
+ <summary>
+ 整张画布的大小区域
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow">
+ <summary>
+ 按照任意角度旋转的箭头对象
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.HeadLengthPercentage">
+ <summary>
+ 箭头的头部占据整个长度的百分比
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.BodyHeightPercentage">
+ <summary>
+ 箭头的主体部分占据整个高度的百分比
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.#ctor(System.Drawing.Point,System.Drawing.Size,System.Drawing.Color)">
+ <summary>
+ 
+ </summary>
+ <param name="Location">箭头头部的位置</param>
+ <param name="Size">高度和宽度</param>
+ <param name="Color">填充的颜色</param>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.Size">
+ <summary>
+ 返回图形上面的绘图的大小，而非箭头本身的大小
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.Left">
+ <summary>
+ 忽略了箭头的方向，本箭头对象存粹的在进行图形绘制的时候的左右的位置
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.Right">
+ <summary>
+ 忽略了箭头的方向，本箭头对象存粹的在进行图形绘制的时候的左右的位置
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Arrow.Draw(Microsoft.VisualBasic.Imaging.IGraphics@,System.Drawing.Point)">
+ <summary>
+  /|_____
+ /       |
+ \       |
+  \|-----
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.RoundRect">
+ <summary>
+ 绘制圆角矩形
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Pentacle">
+ <summary>
+ 五角星
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Pentacle.RotateTheta(System.Drawing.Point,System.Drawing.Point,System.Single)">
+ <summary>
+ 旋转
+ </summary>
+ <param name="pt"></param>
+ <param name="center"></param>
+ <param name="theta"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Hexagon">
+ <summary>
+ 六边形
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Circle.#ctor(System.Drawing.Point,System.Int32,System.Drawing.Color)">
+ <summary>
+ 
+ </summary>
+ <param name="topLeft">左上角</param>
+ <param name="d">圆的直径</param>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Circle.Draw(Microsoft.VisualBasic.Imaging.IGraphics@,System.Drawing.Point,System.Single,System.Drawing.Brush,Microsoft.VisualBasic.MIME.Markup.HTML.CSS.Stroke)">
+ <summary>
+ 绘制圆
+ </summary>
+ <param name="g"></param>
+ <param name="center"></param>
+ <param name="radius"></param>
+ <param name="br"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Triangle.DrawAsRightTriangle(System.Int32,System.Int32)">
+ <summary>
+ 直角三角形
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Line.#ctor(System.Drawing.Point,System.Drawing.Point,System.Drawing.Color,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="pt1">在进行位移的时候，这两个点之间的相对位置不会发生改变</param>
+ <param name="pt2"></param>
+ <param name="Color"></param>
+ <param name="Width"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Shape">
+ <summary>
+ 矢量图形
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Shape.EnableAutoLayout">
+ <summary>
+ 默认是允许自动组织布局的
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Shapes.Shape.Draw(Microsoft.VisualBasic.Imaging.IGraphics@,System.Drawing.Point)">
+ <summary>
+ 
+ </summary>
+ <param name="OverridesLoci">假若需要进行绘制到的时候复写当前的元素的位置，则请使用这个参数</param>
+ <returns>函数返回当前元素在绘制之后所占据的区域</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.FontMetrics.Graphics">
+ <summary>
+ The default gdi+ graphics context
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.FontMetrics.Height">
+ <summary>
+ 在当前的字体条件下面的，使用默认的<see cref="P:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.FontMetrics.Graphics"/>上下文的文本行高
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.FontMetrics.GetStringBounds(System.String,System.Drawing.Graphics)">
+ <summary>
+ Using another graphics context
+ </summary>
+ <param name="s"></param>
+ <param name="g"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.TextRender">
+ <summary>
+ 基于HTML语法的字符串的绘制描述信息的解析
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.TextRender.RenderHTML(System.Drawing.Graphics@,System.String,System.String,System.Drawing.PointF,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="g"></param>
+ <param name="text$"></param>
+ <param name="CSS_style$"></param>
+ <param name="location">默认是 ``(0, 0)``</param>
+ <param name="maxWidth%"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing2D.Vector.Text.TextRender.DrawHtmlText(System.String,System.String,System.String)">
+ <summary>
+ Rendering the html text as gdi+ image
+ </summary>
+ <param name="label$">HTML</param>
+ <param name="cssFont$">For html ``&lt;p>...&lt;/p>`` css style</param>
+ <param name="maxSize$"></param>
+ <returns></returns>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Camera.offset">
+ <summary>
+ Using for the project result 
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Camera.lightAngle">
+ <summary>
+ Light
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Camera.colorDifference">
+ <summary>
+ Light
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Camera.lightColor">
+ <summary>
+ Light, default using <see cref="P:System.Drawing.Color.White"/> as the light color
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Model2D.path">
+ <summary>
+ 实际的模型数据
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Model2D.DrawPath">
+ <summary>
+ 经过模型数据<see cref="F:Microsoft.VisualBasic.Imaging.Drawing3D.Model2D.path"/>转换之后所得到的绘图所使用的对象模型
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine">
+ <summary>
+ Isometric 3d graphics painter
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.models">
+ <summary>
+ The 3D models
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.TranslatePoint(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D)">
+ <summary>
+ + X rides along the angle extended from the origin
+ + Y rides perpendicular to this angle (in isometric view: PI - angle)
+ + Z affects the y coordinate of the drawn point
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.AddPath(Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D,System.Drawing.Color)">
+ <summary>
+ 这个函数会同时对曲面进行光照处理
+ </summary>
+ <param name="path"></param>
+ <param name="color"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.Measure(System.Int32,System.Int32,System.Boolean)">
+ <summary>
+ The 3D projection and model matrix transformation.
+ (在绘图前面需要调用这个方法进行图形合成)
+ </summary>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="sort"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.Draw(Microsoft.VisualBasic.Imaging.IGraphics@)">
+ <summary>
+ Draw the 3D graphics onto the canvas device object.(进行三维图形绘图操作)
+ </summary>
+ <param name="canvas"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.IsPointInPoly(System.Collections.Generic.IList{Microsoft.VisualBasic.Imaging.Drawing3D.Point3D},System.Double,System.Double)">
+ <summary>
+ 点对象是否处于多边形对象<paramref name="poly"/>之中
+ </summary>
+ <param name="poly"></param>
+ <param name="x"></param>
+ <param name="y"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.IsometricEngine.IntersectionWith(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D[],Microsoft.VisualBasic.Imaging.Drawing3D.Point3D[])">
+ <summary>
+ 判断两个多边形是否具有相交的部分
+ </summary>
+ <param name="pointsA"></param>
+ <param name="pointsB"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Device.DrawGraphics">
+ <summary>
+ 3D plot for <see cref="T:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice"/>，由于是需要将图像显示到WinFom控件上面，所以在这里要求的是gdi+的图形驱动程序
+ </summary>
+ <param name="canvas">gdi+ handle</param>
+ <param name="camera">3d camera</param>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Device.Light">
+ <summary>
+ <see cref="T:Microsoft.VisualBasic.Imaging.Drawing3D.Surface"/>的表面光照的计算
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Device.Light.Illumination(System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.Polygon})">
+ <summary>
+ Makes the 3D graphic more natural.(旧的光照模型，不推荐使用)
+ </summary>
+ <param name="surfaces">
+ Polygon buffer.(经过投影和排序之后得到的多边形的缓存对象)
+ </param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Device.Light.Lighting(Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Drawing.Color,System.Double,System.Drawing.Color)">
+ <summary>
+ 对模型之中的某一个表面进行光照处理
+ </summary>
+ <param name="path">这个对象是一个平面</param>
+ <param name="color"></param>
+ <param name="lightColor">光源的颜色，最常用的光源颜色为白色``<see cref="P:System.Drawing.Color.White"/>``</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Device.Light.Lighting(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D[],Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Drawing.Color,System.Double,System.Drawing.Color)">
+ <summary>
+ 
+ </summary>
+ <param name="vertices">构成模型之中的一个表面的顶点数据</param>
+ <param name="lightAngle"></param>
+ <param name="color"></param>
+ <param name="colorDifference#"></param>
+ <param name="lightColor"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Device.Worker">
+ <summary>
+ 三维图形设备的工作线程管理器
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Device.Worker.RenderingThread(System.Object,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ 1 frame
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice">
+ <summary>
+ GDI+三维图形显示设备的简易抽象
+ </summary>
+ <remarks>
+ 在这个控件之中存在两条工作线程用来加速三维图形的绘制:
+ 
+ + 空间计算线程，用来对数据进行预处理，包括投影和排序，生成可以直接被使用的多边形缓存
+ + 图形渲染线程，用于进行三维图形的绘图操作，进行图像显示
+ </remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice.DrawPath">
+ <summary>
+ 是否绘制出模型的边界线
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice.GDIDevice_Load(System.Object,System.EventArgs)">
+ <summary>
+ Enable Single-buffering to eliminate flickering.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice.Model">
+ <summary>
+ 这个属性用来提供模型数据，例如位移之后的模型数据
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice.Plot">
+ <summary>
+ ```vbnet
+ Public Delegate Sub IGraphics(g As <see cref="T:System.Drawing.Graphics"/>, camera As <see cref="T:Microsoft.VisualBasic.Imaging.Drawing3D.Camera"/>)
+ ```
+ 这个接口提供一些额外的信息的显示，例如调试信息
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Device.GDIDevice._animationLoop_Tick(System.Object,System.EventArgs)">
+ <summary>
+ Forces the Paint event to be called.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Circle">
+ <summary>
+ Created by fabianterhorst on 01.04.17.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Circle.#ctor(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double,System.Double)">
+ <summary>
+ 构建三维空间之中的一个圆弧路径
+ </summary>
+ <param name="origin">相对坐标系原点</param>
+ <param name="radius"></param>
+ <param name="vertices">构成这个圆形的顶点的数量</param>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Arc">
+ <summary>
+ 圆弧
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Arc.Circle(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double,System.Double)">
+ <summary>
+ Create a <see cref="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D"/> model that similar with <see cref="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Circle"/> model.
+ </summary>
+ <param name="origin"></param>
+ <param name="radius#"></param>
+ <param name="vertices#"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Rectangle">
+ <summary>
+ Created by fabianterhorst on 01.04.17.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Paths.Star">
+ <summary>
+ Created by fabianterhorst on 01.04.17.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shape3D">
+ <summary>
+ A collection of the path3D data.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shape3D.OrderedPath3Ds">
+ <summary>
+ Sort the list of faces by distance then map the entries, returning
+ only the path and not the added "further point" from earlier.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shape3D.Extrude(Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shape3D,Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D,System.Double)">
+ <summary>
+ 将一个面平移一段距离，最后和通过平移新的到的平面，构成一个三维物体
+ </summary>
+ <param name="shape"></param>
+ <param name="path"></param>
+ <param name="height"></param>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D.Depth">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D.Reverse">
+ <summary>
+ Returns a new path with the points in reverse order
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D.CloserThan(Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D)">
+ <summary>
+ If pathB ("this") is closer from the observer than pathA, it must be drawn after.
+ It is closer if one of its vertices and the observer are on the same side of the plane defined by pathA.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D.CountCloserThan(Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Path3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D)">
+ <summary>
+ The plane containing <paramref name="pathA"/> is defined by the three points A, B, C
+ </summary>
+ <param name="pathA"></param>
+ <param name="observer"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shapes.Cylinder">
+ <summary>
+ Created by fabianterhorst on 01.04.17.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shapes.Octahedron">
+ <summary>
+ Created by fabianterhorst on 02.04.17.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shapes.Prism">
+ <summary>
+ Created by fabianterhorst on 01.04.17.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shapes.Pyramid">
+ <summary>
+ Created by fabianterhorst on 02.04.17.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Isometric.Shapes.Stairs">
+ <summary>
+ Created by fabianterhorst on 02.04.17.
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Cube._faces">
+ <summary>
+ Create an array representing the 6 faces of a cube. Each face is composed by indices to the vertex array
+ above.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Cube.#ctor(System.Int32,System.Drawing.Color[])">
+ <summary>
+ 
+ </summary>
+ <param name="d%">正方形的边的长度</param>
+ <param name="colors"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Models.Cube.GetEnumerator">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+ <remarks>
+ ```
+ 0 - {0, 1, 2, 3} 0,1,2,3 = 0,1,2,3
+ 1 - {1, 5, 6, 2}   1,2   = 5,6
+ 2 - {5, 4, 7, 6}   1,2   = 4,7
+ 3 - {4, 0, 3, 7}
+ 4 - {0, 4, 5, 1}
+ 5 - {3, 2, 6, 7}
+ ```
+ </remarks>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.ORIGIN">
+ <summary>
+ 三维坐标系的原点``(0, 0, 0)``
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.RotateX(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double)">
+ <summary>
+ Rotate about origin on the X axis
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.RotateY(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double)">
+ <summary>
+ Rotate about origin on the Y axis
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.RotateZ(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double)">
+ <summary>
+ Rotate about origin on the Y axis
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.Translate(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double,System.Double,System.Double)">
+ <summary>
+ Translate a point from a given dx, dy, and dz
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.Scale(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Double,System.Double,System.Double)">
+ <summary>
+ Scale a point about a given origin
+ </summary>
+ 
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Transformation.Distance(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,Microsoft.VisualBasic.Imaging.Drawing3D.Point3D)">
+ <summary>
+ Distance between two points
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Projection">
+ <summary>
+ 3D coordinate transformation tools.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Projection.PointXY(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Drawing.Size)">
+ <summary>
+ Gets the projection 2D point result from this readonly property
+ </summary>
+ <param name="rect"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Projection.SpaceToGrid(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Single)">
+ <summary>
+ Transform point 3D into point 2D
+ </summary>
+ <param name="pt3D"></param>
+ <param name="xRotate"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Projection.SpaceToGrid(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Single,System.Drawing.Point)">
+ <summary>
+ Project of the 3D point to 2D point
+ </summary>
+ <param name="pt3D"></param>
+ <param name="xRotate"></param>
+ <param name="offset"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Matrix.TranslateBuffer(Microsoft.VisualBasic.Imaging.Drawing3D.Camera,Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D,System.Boolean)">
+ <summary>
+ 投影
+ </summary>
+ <param name="v">经过转换之后的向量，例如旋转或者位移，在这个函数值中会利用摄像机进行投影</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D.PointXY(System.Drawing.Size)">
+ <summary>
+ 函数返回来的点集合之中的元素顺序和向量之中的数值的顺序是一致的
+ </summary>
+ <param name="screen"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D.RotateX(System.Single)">
+ <summary>
+ 
+ </summary>
+ <param name="angle">Degree.(度，函数里面会自动转换为三角函数所需要的弧度的)</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D.Project(System.Int32,System.Int32,System.Int32,System.Single,System.Drawing.PointF)">
+ <summary>
+ Project the 3D point to the 2D screen. By using the projection result, 
+ just read the property <see cref="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D.PointXY(System.Drawing.Size)"/>.
+ (将3D投影为2D，所以只需要取结果之中的<see cref="F:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D.X"/>和<see cref="F:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Vector3D.Y"/>就行了)
+ </summary>
+ <param name="viewWidth"></param>
+ <param name="viewHeight"></param>
+ <param name="fov">256默认值</param>
+ <param name="viewDistance"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm">
+ <summary>
+ ``PAINTERS ALGORITHM`` provider
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.SurfacePainter(System.Drawing.Graphics@,Microsoft.VisualBasic.Imaging.Drawing3D.Camera,System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Imaging.Drawing3D.Surface},System.Boolean,System.Boolean)">
+ <summary>
+ 这个函数主要是应用于函数绘图的。请注意，这个并没有rotate，只会利用camera进行project
+ </summary>
+ <param name="canvas"></param>
+ <param name="camera"></param>
+ <param name="surfaces"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.SurfacePainter(Microsoft.VisualBasic.Imaging.IGraphics@,Microsoft.VisualBasic.Imaging.Drawing3D.Camera,System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Imaging.Drawing3D.Surface},System.Boolean,System.Boolean)">
+ <summary>
+ 这个函数主要是应用于函数绘图的。请注意，这个并没有rotate，只会利用camera进行project
+ </summary>
+ <param name="canvas"></param>
+ <param name="camera"></param>
+ <param name="surfaces"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.BufferPainting(Microsoft.VisualBasic.Imaging.IGraphics@,System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.Polygon},System.Boolean)">
+ <summary>
+ 应用于GDI+/SVG的兼容方法
+ </summary>
+ <param name="canvas"></param>
+ <param name="buf"></param>
+ <param name="drawPath"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.BufferPainting(System.Drawing.Graphics@,System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.Polygon},System.Boolean)">
+ <summary>
+ 应用于WinForm的原生方法
+ </summary>
+ <param name="canvas"></param>
+ <param name="buf"></param>
+ <param name="drawPath"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.PainterBuffer(Microsoft.VisualBasic.Imaging.Drawing3D.Camera,System.Collections.Generic.IEnumerable{Microsoft.VisualBasic.Imaging.Drawing3D.Surface},System.Boolean)">
+ <summary>
+ 生成三维图形绘图的多边形缓存。请注意，这个并没有rotate，只会利用camera进行project
+ </summary>
+ <param name="camera"></param>
+ <param name="surfaces"></param>
+ <param name="illumination">是否需要对每一个表面进行光照处理？</param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.Polygon">
+ <summary>
+ The polygon buffer unit after the 3D to 2D projection and the z-order sorts.
+ (经过投影和排序操作之后的多边形图形缓存单元)
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.Polygon.points">
+ <summary>
+ The 3D projection result buffer
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.Polygon.brush">
+ <summary>
+ Surface fill
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.PainterAlgorithm.OrderProvider``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Double})">
+ <summary>
+ ``PAINTERS ALGORITHM`` kernel
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="source"></param>
+ <param name="z">计算出z轴的平均数据</param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Surface">
+ <summary>
+ Object model that using for the 3D graphics.
+ (进行实际3D绘图操作的对象模型，这个对象实际上就是相当于Path3D??)
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Surface.vertices">
+ <summary>
+ Vertix in this list have the necessary element orders
+ for construct a correct closed figure.
+ (请注意，在这里面的点都是有先后顺序分别的)
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Drawing3D.Surface.brush">
+ <summary>
+ Drawing texture material of this surface.
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D">
+ <summary>
+ Defines the Point3D class that represents points in 3D space.
+ Developed by leonelmachava &lt;leonelmachava@gmail.com>
+ http://codentronix.com
+
+ Copyright (c) 2011 Leonel Machava
+ </summary>
+ 
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.Depth">
+ <summary>
+ The depth of a point in the isometric plane
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.RotateX(System.Single)">
+ <summary>
+ 
+ </summary>
+ <param name="angle">Degree.(度，函数里面会自动转换为三角函数所需要的弧度的)</param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.Project(System.Int32,System.Int32,System.Int32,System.Single,System.Drawing.PointF)">
+ <summary>
+ Project the 3D point to the 2D screen. By using the projection result, 
+ just read the property <see cref="M:Microsoft.VisualBasic.Imaging.Drawing3D.Math3D.Projection.PointXY(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Drawing.Size)"/>.
+ (将3D投影为2D，所以只需要取结果之中的<see cref="P:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.X"/>和<see cref="P:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.Y"/>就行了)
+ </summary>
+ <param name="viewWidth"></param>
+ <param name="viewHeight"></param>
+ <param name="fov">256默认值</param>
+ <param name="viewDistance"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.Project(System.Single@,System.Single@,System.Single,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Project the 3D point to the 2D screen. 
+ </summary>
+ <param name="x!"></param>
+ <param name="y!"></param>
+ <param name="z!">Using for the painter algorithm.</param>
+ <param name="viewWidth%"></param>
+ <param name="viewHeight%"></param>
+ <param name="fov%"></param>
+ <param name="viewDistance%">View distance to the model from the view window.</param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Drawing3D.Point3D.op_Equality(Microsoft.VisualBasic.Imaging.Drawing3D.Point3D,System.Single)">
+ <summary>
+ 所有的分量是否都等于目标值？使用这个操作符可以很方便的判断点是否为空值
+ </summary>
+ <param name="p"></param>
+ <param name="n!"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Driver.GraphicsData">
+ <summary>
+ gdi+ images: <see cref="T:System.Drawing.Image"/>, <see cref="T:System.Drawing.Bitmap"/> / SVG image: <see cref="T:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml"/>
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Driver.GraphicsData.Driver">
+ <summary>
+ The graphics engine driver type indicator, 
+ 
+ + for <see cref="F:Microsoft.VisualBasic.Imaging.Driver.Drivers.GDI"/> -> <see cref="T:Microsoft.VisualBasic.Imaging.Driver.ImageData"/>(<see cref="T:System.Drawing.Image"/>, <see cref="T:System.Drawing.Bitmap"/>)
+ + for <see cref="F:Microsoft.VisualBasic.Imaging.Driver.Drivers.SVG"/> -> <see cref="T:Microsoft.VisualBasic.Imaging.Driver.SVGData"/>(<see cref="T:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml"/>)
+ 
+ (驱动程序的类型)
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Driver.GraphicsData.#ctor(System.Object,System.Drawing.Size)">
+ <summary>
+ 
+ </summary>
+ <param name="img">其实这个参数在基类<see cref="T:Microsoft.VisualBasic.Imaging.Driver.GraphicsData"/>之中是无用的，只是为了统一接口而设置的</param>
+ <param name="size"></param>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Driver.GraphicsData.Save(System.String)">
+ <summary>
+ Save the image graphics to file
+ </summary>
+ <param name="path$"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Driver.GraphicsData.Save(System.IO.Stream)">
+ <summary>
+ Save the image graphics to a specific output stream
+ </summary>
+ <param name="out"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Driver.ImageData">
+ <summary>
+ Get image value from <see cref="P:Microsoft.VisualBasic.Imaging.Driver.ImageData.Image"/>
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Driver.ImageData.Image">
+ <summary>
+ GDI+ image
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.Driver.ImageData.DefaultFormat">
+ <summary>
+ Default image save format for <see cref="T:System.Drawing.Bitmap"/>
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Driver.ImageData.Save(System.String)">
+ <summary>
+ Save the image as png
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.Driver.SVGData.Save(System.String)">
+ <summary>
+ Save the image as svg file.
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Driver.Drivers">
+ <summary>
+ The imaging graphics engine list for <see cref="T:Microsoft.VisualBasic.Imaging.IGraphics"/>
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Driver.Drivers.Default">
+ <summary>
+ 与具体上下文相关的。当用户从命令行参数之中设置了环境变量之后，这个Default的含义与用户所设置的驱动程序类型一致，但是会被程序开发人员所设置的类型值所覆盖
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Driver.Drivers.GDI">
+ <summary>
+ <see cref="T:Microsoft.VisualBasic.Imaging.Graphics2D"/>
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.Driver.Drivers.SVG">
+ <summary>
+ <see cref="T:Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG"/>
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.Driver.ImageSynthesis">
+ <summary>
+ Makes the ``DrawImage`` function compatible with old gdi+ interface
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.SVG.SVGDataCache.op_Addition(Microsoft.VisualBasic.Imaging.SVG.SVGDataCache,System.Drawing.Point)">
+ <summary>
+ 所有的节点元素都需要进行位置位移
+ </summary>
+ <param name="data"></param>
+ <param name="offset"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.SVGWriter">
+ <summary>
+ Write the data in <see cref="T:Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG"/> as a xml file.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.SVG.SVGWriter.SVG(Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG,System.String)">
+ <summary>
+ Get the current svg model data from current graphics engine.
+ </summary>
+ <param name="g"></param>
+ <param name="size$"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.SVG.SVGWriter.WriteSVG(Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG,System.String,System.String)">
+ <summary>
+ 将画布<see cref="T:Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG"/>之中的内容写入SVG文件
+ </summary>
+ <param name="g"></param>
+ <param name="path$">``*.svg``保存的SVG文件的路径</param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.Renderer">
+ <summary>
+ 将SVG图像渲染为gdi+图像<see cref="T:System.Drawing.Image"/>
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG">
+ <summary>
+ SVG graphics generator
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.SVG.GraphicsSVG.__graphics">
+ <summary>
+ 主要是需要进行字体的大小计算所需要使用的一个内部gdi+对象
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.ICanvas">
+ <summary>
+ SVG之中的画布对象，<see cref="T:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml"/>和<see cref="T:Microsoft.VisualBasic.Imaging.SVG.XML.g"/>都属于这种类型
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.g">
+ <summary>
+ SVG graphics unit
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.Image">
+ <summary>
+ Does SVG support embedding of bitmap images?
+ 
+ + http://stackoverflow.com/questions/6249664/does-svg-support-embedding-of-bitmap-images
+ </summary>
+</member>
+<member name="F:Microsoft.VisualBasic.Imaging.SVG.XML.Image.base64Header">
+ <summary>
+ ``data:image/png;base64,...``
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml">
+ <summary>
+ The svg vector graphics in Xml document format.
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml.defs">
+ <summary>
+ Style definition of the xml node in this svg document. 
+ you can define the style by using css and set the class 
+ attribute for the specific node to controls the 
+ visualize style.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml.style">
+ <summary>
+ SVG对象也会在这里面定义CSS
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml.SaveAsXml(System.String,System.Text.Encoding)">
+ <summary>
+ Save this svg document object into the file system.
+ </summary>
+ <param name="Path"></param>
+ <param name="encoding"></param>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml.GetSVGXml">
+ <summary>
+ 将当前的这个SVG对象序列化为XML字符串文本
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.SVG.XML.SVGXml.SaveAsXml(System.String,Microsoft.VisualBasic.Text.Encodings)">
+ <summary>
+ Save this svg document object into the file system.
+ </summary>
+ <param name="Path"></param>
+ <param name="encoding"></param>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.node">
+ <summary>
+ The basically SVG XML document node, it can be tweaks on the style by using CSS
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.node.style">
+ <summary>
+ CSS style definition <see cref="T:Microsoft.VisualBasic.MIME.Markup.HTML.CSS.ICSSValue"/>.(请注意，假若是SVG对象则赋值这个属性无效)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.node.class">
+ <summary>
+ node class id, just like the id in HTML, you can also using this attribute to tweaks on the style by CSS.
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.polygon">
+ <summary>
+ 不规则的多边形对象
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.polygon.points">
+ <summary>
+ 定点坐标列表
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.rect">
+ <summary>
+ 矩形对象
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.path">
+ <summary>
+ ``&lt;path>`` 标签用来定义路径。
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.path.d">
+ <summary>
+ 下面的命令可用于路径数据：
+ 
+ M = moveto
+ L = lineto
+ H = horizontal lineto
+ V = vertical lineto
+ C = curveto
+ S = smooth curveto
+ Q = quadratic Belzier curve
+ T = smooth quadratic Belzier curveto
+ A = elliptical Arc
+ Z = closepath
+ 
+ 注释：以上所有命令均允许小写字母。大写表示绝对定位，小写表示相对定位。
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.line">
+ <summary>
+ 一个线段对象
+ </summary>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.text">
+ <summary>
+ SVG之中的文本对象
+ </summary>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.text.value">
+ <summary>
+ 文本字符串
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.text.y">
+ <summary>
+ 文本对象在画布上面的坐标位置
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Microsoft.VisualBasic.Imaging.SVG.XML.text.x">
+ <summary>
+ 文本对象在画布上面的坐标位置
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Microsoft.VisualBasic.Imaging.SVG.XML.CSSStyles">
+ <summary>
+ 在这个SVG对象之中所定义的CSS样式数据
+ </summary>
+</member>
+<member name="M:Microsoft.VisualBasic.Imaging.TextureResourceLoader.LoadTextureResource(System.Drawing.Image,System.Drawing.Size,System.Int32,System.Int32)">
+ <summary>
+ 按照指定的资源图片和参数进行纹理资源的剪裁处理
+ </summary>
+ <param name="Resource"></param>
+ <param name="Size"></param>
+ <param name="IntervalWidth">纹理模块之间在水平上的间隔宽度</param>
+ <param name="IntervalHeight">纹理模块之间在竖直方向上的间隔宽度</param>
+ <returns></returns>
+ <remarks></remarks>
+ 
+</member>
+</members>
+</doc>

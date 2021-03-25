@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DashBoard WPF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Dashboard</a></li>
+							<li><a href="#one" style="text-size:20">下载</a></li>
+							<!--li><a href="#two">注册</a></li-->
+							<li><a href="#three">注册</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Dashboard</h1>
+							<p>个人信息管理平台,提供日记编辑,账目管理，联系人管理</p>
+							<ul class="actions">
+								<li><a href="#one" class="button big">了解更多</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<br><br>
+						<div style="text-align:center" style="margin:30 30 30 30">
+							<img src="images/shot.PNG" alt="" data-position="center center" style="width:80%"/><br><br>
+							<a  class="button big">下载</a>
+						</div>
+						<br><br>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>注册账号</h2>
+							<p>你需要拥有一个Dashboard账号以登陆</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="login.php" onsubmit="return check()">
+										<div class="field half first">
+											<label for="name">用户名</label>
+											<input type="text" name="name" id="name"/>
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="mail" id="mail"/>
+										</div>
+										<div class="field">
+											<label for="message">密码</label>
+											<input name="password1" type="password" id="password1">
+										</div>
+										<div class="field">
+											<label for="message">确认密码</label>
+											<input name="password2" type="password" id="password2">
+										</div>
+										<ul class="actions">
+											<li><button href="" class="button big" type="submit" name="submit">注册</button></li>
+										</ul>
+									</form>
+									<label style="color:red" id="warn"></label>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<svg style="width:50px;height:50px" viewBox="0 0 24 24">
+    <path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+</svg>
+											<a class="button" href="https://github.com/XUranus/dashboard_WPF_VB.NET">Github</a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+			</div>
+
+
+			<script>
+			function check() {
+				var password1 = document.getElementById('password1');
+				var password2 = document.getElementById('password2');
+				var mail = document.getElementById('mail');
+				var name = document.getElementById('name');
+				var atpos = mail.value.indexOf("@");
+				var dotpos = mail.value.lastIndexOf(".");
+				if(atpos<1 || dotpos<atpos+2 || dotpos+2>=mail.length) {
+					showError('邮箱格式不正确！');
+					return false;
+				}
+				if(password1.value!=password2.value) {
+					showError('密码不一致！');
+					return false;
+				}
+				if(password1.value=="" || password1.value==null) {
+					showError('密码不能为空！');
+					return false;
+				}
+				if(name.value=="" || name.value==null) {
+					showError('用户名不能为空！');
+					return false;
+				}
+			};
+
+			function showError(str) {
+				var warning = document.getElementById('warn');
+				warning.innerHTML = str;
+				//alert(str);
+			}
+			</script>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; XUranus. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
